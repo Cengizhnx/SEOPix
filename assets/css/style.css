@@ -259,6 +259,26 @@ body {
 
 #services {
   background-color: var(--color-secondary);
+  position: relative;
+}
+.all-services {
+  position: absolute;
+  top: 50%;
+  right: -84.5px;
+  transform: translateY(-50%) rotate(-90deg);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  padding: 16px 20px;
+  border-radius: 22.67px 22.67px 0px 0px;
+}
+.all-services:hover {
+  background-color: var(--color-light-purple);
+  color: #fff;
 }
 
 #offer {
@@ -267,7 +287,6 @@ body {
   position: relative;
   margin-bottom: -175px;
 }
-
 #offer > div > div > .bold-title {
   line-height: 42px;
   width: 72%;
@@ -275,7 +294,6 @@ body {
 #offer > div > div > .plain-text {
   width: 60%;
 }
-
 #offer > div > form {
   border-radius: 30px;
   background-color: #fff;
@@ -300,8 +318,8 @@ body {
 textarea.form-control {
   resize: none;
 }
-/* Footer */
 
+/* Footer */
 footer {
   padding-top: 250px;
   background-color: var(--color-footer);
@@ -482,6 +500,9 @@ footer > div > hr {
   #offer > div > form {
     padding: 20px;
   }
+  .all-services{
+    display: none;
+  }
 }
 @media screen and (max-width: 465px) {
   #header > div > h1 {
@@ -530,6 +551,6 @@ footer > div > hr {
     font-size: 15px;
   }
   .contact-text {
-    font-size: 20px;
+    font-size: 18.5px;
   }
 }
