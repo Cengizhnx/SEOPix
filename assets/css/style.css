@@ -512,6 +512,10 @@ footer > div > hr {
   #header > div > p {
     font-size: 16.5px;
   }
+  .bg-yellow-text{
+    font-size: 14px;
+    padding: 6px 15px;
+  }
   .regular-title {
     font-size: 14px;
     letter-spacing: 0.05em;
