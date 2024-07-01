@@ -3,6 +3,7 @@
   --color-purple: #3e037a;
   --color-light-purple: #7e58ff;
   --color-yellow: #e1ffcf;
+  --color-dark-yellow: #a5f575;
   --color-gray: #d3d3d3;
   --color-secondary: #fafafa;
   --color-footer: #0e1027;
@@ -23,6 +24,14 @@ body {
 #header {
   height: 686px;
   background: linear-gradient(180deg, #7d00ff 0%, #0f041a 100%);
+}
+#header.seo {
+  background: linear-gradient(180deg, #8000ff 7.5%, #a091ff 100%);
+}
+.header-brand {
+  position: absolute;
+  top: 60%;
+  right: 30%;
 }
 #header nav > div > div.desktop-nav {
   height: 102px;
@@ -81,6 +90,29 @@ body {
   bottom: 0%;
   transform: translate(-50%, 0%);
 }
+.seo-breadcrumb {
+  background-color: #ffffff;
+  width: 40%;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  color: #666;
+}
+.seo-breadcrumb a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 24px;
+}
+.seo-breadcrumb a:hover {
+  color: #000;
+}
+.seo-breadcrumb a i {
+  font-size: 20px;
+  color: var(--color-light-purple);
+}
 
 /* Buttons */
 .arrow-button-yellow {
@@ -127,6 +159,7 @@ body {
   letter-spacing: 0.2px;
   text-decoration: none;
 }
+
 .arrow-button-transparent i,
 .arrow-button-purple i {
   background: white;
@@ -160,6 +193,33 @@ body {
   color: var(--color-purple);
 }
 
+.circle-button-transparent {
+  border: none;
+  padding: 9px 8px 9px 0px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #000;
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+.circle-button-transparent i {
+  background: var(--color-light-purple);
+  color: #fff;
+  font-size: 28px;
+  padding: 3px 10px;
+  display: inline-block;
+  border-radius: 100%;
+}
+.circle-button-transparent:hover i {
+  background: var(--color-purple);
+}
+
 /* Texts */
 .regular-title {
   color: #000000;
@@ -178,7 +238,7 @@ body {
 }
 .plain-text {
   color: #000000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
@@ -271,13 +331,13 @@ body {
   font-weight: 400;
   letter-spacing: 0.12em;
   text-align: center;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: var(--color-light-purple);
   padding: 16px 20px;
   border-radius: 22.67px 22.67px 0px 0px;
 }
 .all-services:hover {
-  background-color: var(--color-light-purple);
+  background-color: var(--color-purple);
   color: #fff;
 }
 
@@ -398,6 +458,100 @@ footer > div > hr {
   border: 0.5px solid #ffffff;
 }
 
+.main-brands > div > div > div {
+  margin-bottom: -5px;
+  background-color: var(--color-secondary);
+  border-radius: 26px;
+  padding: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.main-brands > div > div > div > p {
+  font-family: var(--poppins-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 0;
+}
+.main-brands .brand-img {
+  background-color: var(--color-secondary);
+  height: 155px;
+  border-radius: 26px;
+  border-top-left-radius: 0;
+}
+.main-brands a img {
+  color: #666;
+}
+.main-brands a:hover img {
+  opacity: 0.7;
+}
+
+#seo-services {
+  background-color: var(--color-secondary);
+}
+
+#seo-services .service-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+}
+#seo-services .arrow-box-header {
+  display: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
+}
+#seo-services .arrow-box-header div {
+  margin-bottom: -19px;
+  background-color: #fff;
+  border-radius: 26px;
+  padding: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#seo-services .arrow-box-header a {
+  margin-bottom: -7.5px;
+  padding-left: 21px;
+}
+#seo-services .arrow-box-content {
+  background-color: #fff;
+  border-radius: 30px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  min-height: 306px !important;
+}
+#seo-services .arrow-box:hover .arrow-box-header {
+  display: flex;
+  z-index: 999999;
+}
+#seo-services .arrow-box:hover .arrow-box-header > div {
+  background-color: var(--color-yellow) !important;
+  border: 3px solid var(--color-dark-yellow);
+  border-bottom: none;
+}
+#seo-services .arrow-box:hover .arrow-box-content {
+  background-color: var(--color-yellow) !important;
+  border: 3px solid var(--color-dark-yellow);
+  border-top-left-radius: 0;
+  padding-top: 0px;
+  min-height: 250px !important;
+  max-height: 230px !important;
+}
+#seo-services .arrow-box-content .seo-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+}
+#seo-services .arrow-box-content .seo-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 992px) {
   .navbar-collapse.navbar-mobile {
     display: none !important;
@@ -409,6 +563,15 @@ footer > div > hr {
   }
   #exampleBrands > div > div > .results {
     width: 125%;
+  }
+  .header-brand {
+    right: 15%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-brands .brand-img img {
+    max-width: 130%;
+    height: auto;
   }
 }
 @media screen and (max-width: 992px) {
@@ -452,6 +615,12 @@ footer > div > hr {
   }
   .white-field {
     width: 70%;
+  }
+  .seo-breadcrumb {
+    width: 60%;
+  }
+  .seo-breadcrumb a {
+    font-size: 14px;
   }
   .regular-title {
     font-size: 16px;
@@ -500,7 +669,7 @@ footer > div > hr {
   #offer > div > form {
     padding: 20px;
   }
-  .all-services{
+  .all-services {
     display: none;
   }
 }
@@ -512,7 +681,7 @@ footer > div > hr {
   #header > div > p {
     font-size: 16.5px;
   }
-  .bg-yellow-text{
+  .bg-yellow-text {
     font-size: 14px;
     padding: 6px 15px;
   }
@@ -525,7 +694,7 @@ footer > div > hr {
   }
   .plain-text {
     text-align: justify !important;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 22px;
   }
   .arrow-button-purple {
@@ -540,6 +709,13 @@ footer > div > hr {
   .arrow-button-purple i {
     font-size: 23px;
     padding: 7.5px;
+  }
+  .circle-button-transparent {
+    font-size: 16.5px;
+  }
+  .circle-button-transparent i {
+    font-size: 20px;
+    padding: 3px 9px;
   }
   #exampleBrands > div > div > .plain-text {
     width: 84%;
@@ -556,5 +732,18 @@ footer > div > hr {
   }
   .contact-text {
     font-size: 18.5px;
+  }
+  .main-brands .brand-img img {
+    max-width: 110%;
+  }
+  .seo-breadcrumb {
+    width: 75%;
+  }
+  #seo-services .arrow-box .seo-title {
+    font-size: 20px;
+    line-height: 50px;
+  }
+  #seo-services .arrow-box:hover .arrow-box-content {
+    min-height: 325px !important;
   }
 }
