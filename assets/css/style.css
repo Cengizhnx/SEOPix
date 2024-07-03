@@ -33,7 +33,15 @@ body {
 .header-brand {
   position: absolute;
   top: 60%;
-  right: 30%;
+  right: 29%;
+  z-index: 9999;
+}
+.header-bg {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 0;
 }
 #header nav > div > div.desktop-nav {
   height: 102px;
@@ -92,6 +100,15 @@ body {
   bottom: 0%;
   transform: translate(-50%, 0%);
 }
+.gray-field {
+  background-color: var(--color-secondary);
+  width: 50%;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+}
 .seo-breadcrumb {
   background-color: #ffffff;
   width: 45%;
@@ -100,6 +117,7 @@ body {
   left: -5%;
   bottom: 0%;
   color: #666;
+  z-index: 99999;
 }
 .seo-breadcrumb a {
   text-decoration: none;
@@ -220,6 +238,68 @@ body {
 }
 .circle-button-transparent:hover i {
   background: var(--color-purple);
+}
+
+.icon-button-purple {
+  padding: 20px;
+  padding-right: 0px;
+  border-radius: 30px;
+  background-color: #bab5f666;
+  border: 5px solid var(--color-light-purple);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+  gap: 22.5px;
+  line-height: 26px;
+  max-width: 300px;
+}
+.icon-button-purple span {
+  width: 70%;
+}
+.icon-button-purple:hover {
+  background-color: #bcb5f6a0;
+}
+
+.arrow-button-gray {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  color: #2e2e2e;
+  text-decoration: none;
+}
+.arrow-button-gray i {
+  display: none;
+}
+.arrow-button-gray:not(.active):hover {
+  opacity: 0.8;
+}
+.arrow-button-gray.active {
+  border: none;
+  padding: 9px 8px 9px 34px;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  color: #2e2e2e;
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+.arrow-button-gray.active i {
+  background: white;
+  color: var(--color-light-purple);
+  font-size: 28px;
+  padding: 7.5px;
+  display: inline-block;
+  border-radius: 100%;
 }
 
 /* Texts */
@@ -626,6 +706,12 @@ footer > div > hr {
   width: 70%;
 }
 
+#how-seo {
+  position: relative;
+}
+#how-seo > div {
+  padding-bottom: 100px;
+}
 #how-seo .arrow-button-purple.active {
   background-color: var(--color-light-purple);
   font-size: 16px;
@@ -650,13 +736,15 @@ footer > div > hr {
   min-width: 300px;
   justify-content: space-between;
 }
+#how-seo .arrow-button-purple:not(.active):hover {
+  background-color: #c0c1c2;
+}
 #how-seo .arrow-button-purple i {
   font-size: 32.5px;
   padding: 10.5px;
   background-color: #eaecee;
   color: #d1d3d4;
 }
-
 #how-seo .text-field {
   background-color: var(--color-secondary);
   border-radius: 20px;
@@ -677,10 +765,80 @@ footer > div > hr {
 #how-seo .text-field img {
   background: #ffffff66;
 }
+.fade:not(.show) {
+  display: none !important;
+  opacity: 0;
+}
+#how-seo .text-field .bold-title {
+  font-size: 18px;
+}
 
+#seo-process {
+  background-color: var(--color-secondary);
+}
+#seo-process .buttons {
+  margin-top: -45px;
+  z-index: 999999;
+  gap: 100px;
+}
+.button-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/seo-sureci.webp);
+  width: 100%;
+  height: 593px;
+  background-position: center;
+}
+.button-image .title-badge {
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  color: #2e2e2e;
+  top: 0;
+  left: 12.5%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0;
+  padding: 24px;
+}
+.button-image .caption {
+  position: absolute;
+  top: 50%;
+  left: 12.5%;
+  transform: translate(0%, -50%);
+  color: #fff;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 71px;
+  width: 20%;
+  margin: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .button-image .title-badge,
+  .button-image .caption {
+    left: 20%;
+  }
+}
 @media screen and (min-width: 992px) {
   .navbar-collapse.navbar-mobile {
     display: none !important;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .button-image {
+    width: 90%;
+    height: 593px;
+    /* height: 440px; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .button-image .title-badge,
+  .button-image .caption {
+    left: 10%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -724,6 +882,20 @@ footer > div > hr {
     width: 250px;
     height: 250px;
   }
+  .button-image {
+    height: 440px;
+  }
+  .button-image .caption {
+    padding-top: 60px;
+    font-size: 50px;
+    line-height: 60px;
+    width: 20%;
+  }
+  #seo-process .buttons {
+    justify-content: center;
+    margin-top: 35px;
+    gap: 100px;
+  }
 }
 @media screen and (max-width: 992px) {
   .header-logo {
@@ -756,6 +928,20 @@ footer > div > hr {
   #how-seo .buttons > a:last-child {
     margin-top: 0px;
   }
+  .button-image .title-badge {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .button-image .caption {
+    font-size: 48px;
+    line-height: 56px;
+    width: 20%;
+    padding-top: 60px;
+  }
+  #seo-process .buttons {
+    margin-top: 35px;
+    gap: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   #header {
@@ -770,6 +956,7 @@ footer > div > hr {
     font-size: 18px;
     line-height: 25px;
   }
+  .gray-field,
   .white-field {
     width: 70%;
   }
@@ -885,6 +1072,25 @@ footer > div > hr {
     font-size: 20px;
     padding: 3px 9px;
   }
+  .icon-button-purple {
+    padding: 18px;
+    padding-right: 0px;
+    font-size: 18px;
+    gap: 18.5px;
+    line-height: 24px;
+    max-width: 300px;
+  }
+  .icon-button-purple img {
+    width: 38px;
+    height: 38px;
+  }
+  .arrow-button-gray.active {
+    padding: 6px 6px 6px 28px;
+    font-size: 20px;
+  }
+  .arrow-button-gray {
+    font-size: 20px;
+  }
   #exampleBrands > div > div > .plain-text {
     width: 84%;
   }
@@ -928,5 +1134,9 @@ footer > div > hr {
   }
   #how-seo .text-field .title {
     font-size: 30px;
+  }
+  .button-image .title-badge {
+    font-size: 16.5px;
+    padding: 20px;
   }
 }

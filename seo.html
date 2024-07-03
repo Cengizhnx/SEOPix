@@ -136,6 +136,13 @@
         height="190"
         alt="Markanı Hemen Büyüt"
       />
+      <img
+        class="header-bg img-fluid d-none d-lg-block"
+        width="1250"
+        height="320"
+        src="assets/img/seo-bg.svg"
+        alt="SEO Arkaplan"
+      />
     </section>
 
     <!-- Brands -->
@@ -636,9 +643,9 @@
     </section>
 
     <!-- How to do SEO? -->
-    <section id="how-seo" class="mb-lg-4">
+    <section id="how-seo">
       <div
-        class="container d-flex flex-column align-items-center justify-content-center pb-4"
+        class="container d-flex flex-column align-items-center justify-content-center"
       >
         <p class="bold-title mt-1">SEO Nasıl Yapılır?</p>
         <p class="plain-text mt-3">
@@ -733,31 +740,80 @@
           </div>
           <div class="col-12 col-lg-6"></div>
         </div>
+        <!-- Butttons -->
         <div
+          id="myTab"
+          role="tablist"
           class="buttons col-12 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between mt-lg-3 gap-3 gap-lg-0"
         >
-          <a href="/" class="col-md-6 col-lg-2 arrow-button-purple active">
+          <a
+            href="/"
+            class="col-md-6 col-lg-2 arrow-button-purple active"
+            id="content1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content1"
+            type="button"
+            role="tab"
+            aria-controls="content1"
+            aria-selected="true"
+          >
             Metin Optimizasyonu <br />
             Nedir, Nasıl Yapılır?
             <i class="bi bi-chevron-down"></i>
           </a>
-          <a href="/" class="col-md-6 col-lg-2 arrow-button-purple">
+          <a
+            href="/"
+            class="col-md-6 col-lg-2 arrow-button-purple"
+            id="content2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content2"
+            type="button"
+            role="tab"
+            aria-controls="content2"
+            aria-selected="false"
+          >
             Site Hızı ve <br />
             Temiz Kod Yapısı
             <i class="bi bi-chevron-right"></i>
           </a>
-          <a href="/" class="col-md-6 col-lg-2 arrow-button-purple">
+          <a
+            href="/"
+            class="col-md-6 col-lg-2 arrow-button-purple"
+            id="content3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content3"
+            type="button"
+            role="tab"
+            aria-controls="content3"
+            aria-selected="false"
+          >
             Kullanıcı Dostu <br />
             Web Sitesi
             <i class="bi bi-chevron-right"></i>
           </a>
-          <a href="/" class="col-md-6 col-lg-2 arrow-button-purple">
+          <a
+            href="/"
+            class="col-md-6 col-lg-2 arrow-button-purple"
+            id="content4-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#content4"
+            type="button"
+            role="tab"
+            aria-controls="content4"
+            aria-selected="false"
+          >
             Güncel SEO İçi SEO <br />
             Faktörleri
             <i class="bi bi-chevron-right"></i>
           </a>
         </div>
-        <div class="text-field col-12 d-flex flex-column mt-5 px-4 py-5 p-lg-5">
+        <!-- Content 1 -->
+        <div
+          class="text-field col-12 d-flex flex-column fade show active mt-5 px-4 py-5 p-lg-5"
+          id="content1"
+          role="tabpanel"
+          aria-labelledby="content-tab"
+        >
           <p class="title">Metin Optimizasyonu Nedir, Nasıl Yapılır?</p>
           <p class="plain-text text-start mx-0">
             Site içerisinde oluşturulan içeriğin SEO açısından incelediğimiz
@@ -771,7 +827,7 @@
             yolları izlediğimizden bahsedelim:
           </p>
           <div
-            class="fields d-flex align-items-start justify-content-center mt-5 gap-4"
+            class="fields d-flex align-items-start justify-content-start mt-5 gap-4"
           >
             <div class="p-2">
               <img
@@ -794,7 +850,7 @@
             </div>
           </div>
           <div
-            class="fields d-flex align-items-start justify-content-center mt-4 gap-4"
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
           >
             <div class="p-2">
               <img
@@ -818,7 +874,7 @@
             </div>
           </div>
           <div
-            class="fields d-flex align-items-start justify-content-center mt-4 gap-4"
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
           >
             <div class="p-2">
               <img
@@ -842,7 +898,7 @@
             </div>
           </div>
           <div
-            class="fields d-flex align-items-start justify-content-center mt-4 gap-4"
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
           >
             <div class="p-2">
               <img
@@ -867,7 +923,7 @@
             </div>
           </div>
           <div
-            class="fields d-flex align-items-start justify-content-center mt-4 gap-4"
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
           >
             <div class="p-2">
               <img
@@ -890,6 +946,286 @@
             </div>
           </div>
         </div>
+        <!-- Content 2 -->
+        <div
+          class="text-field col-12 d-flex flex-column fade mt-5 px-4 py-5 p-lg-5"
+          id="content2"
+          role="tabpanel"
+          aria-labelledby="content2-tab"
+        >
+          <p class="title">Site Hızı ve Temiz Kod Yapısı</p>
+          <p class="plain-text text-start mx-0">
+            Günümüzde internet kullanıcılarının yavaş açılan web sitelerine
+            bounce davranışı gösterme oranı gün geçtikçe artmaktadır. Temiz kod
+            yapısına sahip web siteleri oluşturarak hem site hızını yükseltin
+            hem de kullanıcı deneyiminin yüksek olduğu siteler ile satışlarınızı
+            arttırın!
+          </p>
+          <p class="bold-title mt-3 text-start">
+            Sayfa Hızı Nedir, Nasıl Artırılır
+          </p>
+          <p class="plain-text text-start mt-3 mx-0">
+            Sayfa hızı, bir web sitesinin açılış süresine göre değerlendirilen
+            metriğine denir. Tanımı gün geçtikçe değişkenlik göstermektedir.
+            Çünkü artık Site hızının birden fazla metriği bulunuyor. Site hızı
+            analizinizi Google Page Speed sayfası üzerinden yapabilirsiniz ve
+            oradaki önerileri sitenize uygulayarak site hızınızı
+            arttırabilirsiniz.
+          </p>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-5 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">
+                Dosya boyutlarını optimize ediniz:
+              </p>
+              <p class="plain-text text-start mx-0">
+                Site hızını etkileyen CSS, javascript, html ve image
+                dosyalarınızı optimize ederek minimum derecede dosya boyutlarını
+                kullanmaya özen gösteriniz.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">Cache kullanın</p>
+              <p class="plain-text text-start mx-0">
+                Cache eklentileri ve yazılımları kullanarak sitenizin son halini
+                kaydederek ziyaretçinin 2.ziyaretinde görselleri, javascript ve
+                css dosyalarını olduğu gibi sistemden getirerek tekrar
+                yüklemesine sebep olmaz. Böylece site hızı için müthiş bir SEO
+                deneyimi yaşatmış oluruz.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">Sunucu yanıt süresi</p>
+              <p class="plain-text text-start mx-0">
+                Sitenizde kullanacağınız sunucunun yanıt süresi çok önemlidir.
+                Bulunduğu konumdan verdiği yanıt süresine kadar tüm detaylar
+                için profesyonel hosting firması ile çalışmanızı tavsiye ederiz.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">CDN:</p>
+              <p class="plain-text text-start mx-0">
+                Dünya’nın her yerinde trafik alan müşterileriniz için Resim,
+                css, ve javascriptlerinizi Dünya’nın her yerinden aynı hızda
+                çektirebilmek için CDN servislerinden yararlanınız.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">Lazy Load:</p>
+              <p class="plain-text text-start mx-0">
+                Kullanacağız lazy load yazılım ile görselleri scroll işlemi
+                yaptıkça yükleyeceği için sitenizin ilk açılış hızı deneyimi
+                rakiplerine göre ayrıcalık sağlayacaktır.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">Gereksiz yönlendirmeler:</p>
+              <p class="plain-text text-start mx-0">
+                Sitenizin içinde bulunan gereksiz 301 zincirleme yönlendirmeleri
+                olup olmadığını kontrol ediniz. Gereksiz yönlendirmeler Google
+                botunu tarama bütçesi tarafında olumsuz etkilemektedir. Bu tip
+                verileri Ahrefs ve deepcrawl gibi araçlar üzeirnden analiz
+                edebilirsiniz.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 3 -->
+        <div
+          class="text-field col-12 d-flex flex-column fade mt-5 px-4 py-5 p-lg-5"
+          id="content3"
+          role="tabpanel"
+          aria-labelledby="content3-tab"
+        >
+          <p class="title">Kullanıcı Dostu Web Sitesi</p>
+          <p class="plain-text text-start mx-0">
+            Günümüzde SEO çalışmaları artık kaliteli içerik ve backlink
+            referanslarından ibaret değildir. Kullanıcı dostu web sitesi
+            oluşturmak da en önemli kriterlerden biridir. Ux - Ui alanında uzman
+            kişi veya firmalardan profesyonel destek alarak sektörünüze en uygun
+            tasarımda web siteleri oluşturmayı unutmayınız! Yazı fontlarından
+            kullanacağınız görseller ve butonlara kadar tüm ayrıntılara dikkat
+            etmeniz gerekmektedir.
+          </p>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-5 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">
+                Önemli Web Verileri (Core Web Vitals)
+              </p>
+              <p class="plain-text text-start mx-0">
+                Google gün geçtikçe kullanıcı deneyimine çok önem veriyor ve bu
+                verileri alabileceği değerleri analiz edebileceğimiz ve düzenli
+                takip edebileceğimiz Core Web Vitals ile iyileştirme fırsatı
+                sunuyor.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">En Büyük Görünür İçerik (LCP)</p>
+              <p class="plain-text text-start mx-0">
+                Ziyaretçinin siteye ilk giriş sağladığı zaman en büyük görünür
+                içeriğin oluşma süresine denir. Bu süreyi optimize edebilmek
+                için pre load kodu kullanarak yüklenmesini istediğimiz
+                içeriklerin görsellerin önceliğini belirleyebiliriz. Bu sürenin
+                2.5 saniye altında olması her zaman Google gözünde en iyi
+                kullanıcı deneyimine sahip olmamızı sağlayacaktır.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">İlk Giriş Gecikmesi (FID)</p>
+              <p class="plain-text text-start mx-0">
+                Siteye ilk kez giren kullanıcın oluşturduğu etkileşimin verdiği
+                yanıt süresine denir. Bu yanıt süresinin en ideali 100 ms olarak
+                bilinmektedir.
+              </p>
+            </div>
+          </div>
+          <div
+            class="fields d-flex align-items-start justify-content-start mt-4 gap-4"
+          >
+            <div class="p-2">
+              <img
+                src="assets/img/doc.svg"
+                width="30"
+                height="30"
+                alt="Döküman"
+              />
+            </div>
+            <div class="d-flex flex-column align-items-start">
+              <p class="subject-title mb-1">Kümülatif Düzen Kayması (CLS)</p>
+              <p class="plain-text text-start mx-0">
+                Web projelerinin en kritik problemlerinden biri CLS’ dir. Sayfa
+                içinde boyutları belirlenmeyen görsellerin sayfalarda kayma
+                oluşturması sonucunda kötü bir kullanıcı deneyimi yaşanmasına
+                sebebiyet verebilir. Kümülatif düzen kaymasını engellemek için
+                görsellerin boyutlarını belirlenmesi gerektiğini unutmayınız!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 4 -->
+        <div
+          class="text-field col-12 d-flex flex-column fade mt-5 px-4 py-5 p-lg-5"
+          id="content4"
+          role="tabpanel"
+          aria-labelledby="content4-tab"
+        >
+          <p class="title">Güncel SEO içi SEO faktörleri</p>
+          <ul class="plain-text text-start mt-3 mx-0">
+            <li>Kaliteli İçerik</li>
+            <li>SEO uyumlu web tasarımı</li>
+            <li>Font boyutları</li>
+            <li>404 lerin onarılması</li>
+            <li>Görsel alt etiketler</li>
+            <li>Multiple h1 çözümlemeleri</li>
+            <li>Yapılandırılmış Veriler</li>
+            <li>SSL kullanımı</li>
+            <li>Robots.txt kullanımı</li>
+            <li>Heading Hiyerarşisi</li>
+          </ul>
+        </div>
         <div
           class="col-12 d-flex flex-column flex-lg-row align-items-center justify-content-between mb-5 my-lg-5"
         >
@@ -908,8 +1244,302 @@
               çalışmasına olumlu etki oluşturmasa da dolaylı yoldan sitenizin
               kalite puanını Google nezdinde arttırmaktadır.
             </p>
+            <div
+              class="d-flex flex-column flex-lg-row align-items-start gap-4 mt-5"
+            >
+              <a href="#" class="icon-button-purple">
+                <img
+                  src="assets/img/satis-orani.png"
+                  width="42"
+                  height="42"
+                  alt="Backlink Nedir?"
+                />
+                <span>Backlink Nedir?</span>
+              </a>
+              <a href="#" class="icon-button-purple">
+                <img
+                  src="assets/img/satis-orani.png"
+                  width="42"
+                  height="42"
+                  alt="Backlink Nedir?"
+                />
+                <span>Kaliteli Backlink Nasıl Olmalı?</span>
+              </a>
+            </div>
           </div>
           <div class="col-12 col-lg-6"></div>
+        </div>
+        <div class="gray-field p-4"></div>
+      </div>
+    </section>
+
+    <!-- SEO Process -->
+    <section id="seo-process" class="mb-lg-4">
+      <div
+        class="col-12 d-flex flex-column align-items-center justify-content-center pb-5"
+        id="myTab"
+        role="tablist"
+      >
+        <p class="bold-title mt-1 mb-5">SEO Süreci Nasıl İşler?</p>
+        <div
+          class="button-image fade show active"
+          id="image1"
+          role="tabpanel"
+          aria-labelledby="image1-tab"
+        >
+          <p class="title-badge">Mevcut Durum Analizi</p>
+          <p class="caption">Mevcut Durum Analizi Nasıl Yapılır?</p>
+        </div>
+        <div
+          class="button-image fade"
+          id="image2"
+          role="tabpanel"
+          aria-labelledby="image2-tab"
+        >
+          <p class="title-badge">Rakip Analizi</p>
+          <p class="caption">Rakip Analizi Nasıl Yapılır?</p>
+        </div>
+        <div
+          class="button-image fade"
+          id="image3"
+          role="tabpanel"
+          aria-labelledby="image3-tab"
+        >
+          <p class="title-badge">Sonuçların Raporlanması</p>
+          <p class="caption">Raporlama Nasıl Yapılır?</p>
+        </div>
+        <div
+          class="buttons container col-12 d-flex flex-column flex-lg-row align-items-center"
+        >
+          <a
+            href="#"
+            class="arrow-button-gray active"
+            id="image1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#image1"
+            type="button"
+            role="tab"
+            aria-controls="image1"
+            aria-selected="true"
+          >
+            Hedef Kelime Analizi <i class="bi bi-chevron-right"></i>
+          </a>
+          <a
+            href="#"
+            class="arrow-button-gray"
+            id="image2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#image2"
+            type="button"
+            role="tab"
+            aria-controls="image2"
+            aria-selected="false"
+          >
+            Rakip Analizi <i class="bi bi-chevron-right"></i>
+          </a>
+          <a
+            href="#"
+            class="arrow-button-gray"
+            id="image3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#image3"
+            type="button"
+            role="tab"
+            aria-controls="image3"
+            aria-selected="false"
+          >
+            Raporlandırma <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+        <p
+          id="image1-content"
+          role="tabpanel"
+          aria-labelledby="image1-tab"
+          class="container plain-text text-start fade show active px-5 px-lg-5 mx-lg-5 mt-5"
+        >
+          Kurumsal ya da kişisel marka fark etmeksizin SEO hizmeti sunduğumuz
+          tüm çözüm ortaklarımızda SEO stratejilerimizi detaycı, analitik ve
+          titizlik kavramlarından ödün vermeden oluşturuyor, aksiyon
+          planlarımızı eksiksiz bir şekilde uygulayarak arama motoru botlarına
+          optimum sayfa yapılarımızı hızlıca ulaştırmayı başarıyor ve hedeflenen
+          sıralama sonuçlarını elde etme yolunda kararlı adımlar atıyoruz.
+        </p>
+        <p
+          id="image2-content"
+          role="tabpanel"
+          aria-labelledby="image2-tab"
+          class="container plain-text text-start fade px-5 px-lg-5 mx-lg-5 mt-5"
+        >
+          SEO danışmanlığı verdiğimiz markamızın hitap ettiği potansiyel
+          müşterilerle ilişkili rakiplerimizi henüz SEO çalışmalarının
+          başındayken anahtar kelime bazlı bir şekilde tespit ediyor,
+          rakiplerimize SWOT analizi uygulayarak yalnızca güçlü ve zayıf
+          yönlerini değil, markamız için tehdit oluşturabilecek yönlerini ve
+          potansiyel fırsatları da belirleyerek SEO stratejimizi birçok farklı
+          site içi ve dışı detay dikkate alarak şekillendirmiş oluyoruz.
+        </p>
+        <p
+          id="image3-content"
+          role="tabpanel"
+          aria-labelledby="image3-tab"
+          class="container plain-text text-start fade px-5 px-lg-5 mx-lg-5 mt-5"
+        >
+          Hedef kelime gruplarının belirlenmesi, personanın oluşturulması,
+          mevcut durum analizi ve rakip analizi ile sektörün dinamiklerinin
+          birleştirilmesi sonucunda ortaya çıkan SEO stratejimizi
+          takvimlendirerek eksiksiz bir şekilde uyguladıktan sonra bu
+          aksiyonların sıralama sonuçlarında yarattığı etkiyi, SEO
+          görünürlüğünün genel ivmelenme durumunu ve planlanan yeni aksiyonlar
+          ile beklenen performans değişimlerini aylık periyotlarda raporluyoruz.
+        </p>
+      </div>
+    </section>
+
+    <!-- SEO Tools -->
+    <section id="seo-tools" class="py-5">
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center"
+      >
+        <p class="bold-title mt-1">SEO'da Hangi Araçları Kullanıyoruz ?</p>
+        <p class="plain-text mt-3">
+          SEO Stratejimizi Oluştururken ve Sonuçları Takip Ederken Kullandığımız
+          Araçlar
+        </p>
+        <div
+          class="col-12 d-flex flex-wrap align-items-start justify-content-center justify-content-lg-between mt-5 gap-5"
+        >
+          <div
+            class="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"
+          >
+            <div class="col-lg-2">
+              <img
+                src="assets/img/ahrefs.webp"
+                width="86"
+                height="37"
+                alt="Ahrefs"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/semrush.webp"
+                width="103"
+                height="26"
+                alt="Semrush"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/adobe.webp"
+                width="143"
+                height="39"
+                alt="Adobe"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/hotjar.webp"
+                width="103"
+                height="50"
+                alt="Hotjar"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/deepcrawl.webp"
+                width="165"
+                height="45"
+                alt="Deepcrawl"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"
+          >
+            <div class="col-lg-2">
+              <img
+                src="assets/img/seo-monitor-black.webp"
+                width="165"
+                height="51"
+                alt="SEO Monitor"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/spyfu.webp"
+                width="138"
+                height="52"
+                alt="SpyFu"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/netpeak-software.webp"
+                width="151"
+                height="62"
+                alt="Netpeak Software"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/hub-spot.webp"
+                width="141"
+                height="46"
+                alt="HubSpot"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/cocolyze.webp"
+                width="139"
+                height="56"
+                alt="Cocolyze"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-12 d-flex flex-column flex-lg-row align-items-center justify-content-between gap-5"
+          >
+            <div class="col-lg-2">
+              <img
+                src="assets/img/backlinko.webp"
+                width="138"
+                height="30"
+                alt="Backlinko"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/seodity.webp"
+                width="158"
+                height="40"
+                alt="Seodity"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/relgrowth.webp"
+                width="155"
+                height="34"
+                alt="Relgrowth"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/springhill.webp"
+                width="136"
+                height="36"
+                alt="Springhill"
+              />
+            </div>
+            <div class="col-lg-2">
+              <img
+                src="assets/img/botify.webp"
+                width="114"
+                height="48"
+                alt="Botify"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -933,22 +1563,10 @@
           class="d-flex flex-column flex-lg-row align-items-start justify-content-center mt-5 gap-2 gap-lg-0"
         >
           <div class="col-lg-4 d-flex flex-column align-items-start px-3">
-            <p class="heading m-0">
-              Sitemap (Site Haritası) Nedir? Nasıl Oluşturulur?
-            </p>
+            <p class="heading m-0">Backlink Nedir? Backlink Nasıl Alınır?</p>
             <p class="plain-text text-start m-0 mt-2 mt-lg-3">
-              Sitemap diğer bir ifadeyle site haritası, web site yapınızın arama
-              motorları tarafından daha iyi anlaşılmasında önemli bir rol oynar.
-            </p>
-            <a href="/" class="arrow-button-transparent mt-lg-3">
-              Devamını Oku <i class="bi bi-chevron-right"></i>
-            </a>
-          </div>
-          <div class="col-lg-4 d-flex flex-column align-items-start px-3">
-            <p class="heading m-0">Featured Snippet Nedir ? Nasıl Yapılır ?</p>
-            <p class="plain-text text-start m-0 mt-2 mt-lg-3">
-              Öne çıkan snippet olarak da bilinen featured snippet, Google arama
-              motorunda sıfırıncı sıra olarak tanımlanabilir.
+              Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+              dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet
             </p>
             <a href="/" class="arrow-button-transparent mt-lg-3">
               Devamını Oku <i class="bi bi-chevron-right"></i>
@@ -956,11 +1574,21 @@
           </div>
           <div class="col-lg-4 d-flex flex-column align-items-start px-3">
             <p class="heading m-0">
-              Rankbrain Nedir? Google Rankbrain Algoritması
+              Domain Authority Nedir? (Domain Otoritesi) Nedir?
             </p>
             <p class="plain-text text-start m-0 mt-2 mt-lg-3">
-              Yapay zeka destekli algoritmalar arasında kullanıcıların aramadaki
-              amaçlarını anlamaya yönelik kullanışlı bir özelliktir.
+              Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+              dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet
+            </p>
+            <a href="/" class="arrow-button-transparent mt-lg-3">
+              Devamını Oku <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-start px-3">
+            <p class="heading m-0">Dofollow ve Nofollow Nedir? Ne Demek?</p>
+            <p class="plain-text text-start m-0 mt-2 mt-lg-3">
+              Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
+              dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet
             </p>
             <a href="/" class="arrow-button-transparent mt-lg-3">
               Devamını Oku <i class="bi bi-chevron-right"></i>
@@ -1228,11 +1856,57 @@
       });
     </script>
     <script>
-      const input = document.getElementById("phone");
-      input.addEventListener(
-        "input",
-        () => (input.value = input.value.replaceAll(/[^0-9]/g, ""))
-      );
+      document.addEventListener("DOMContentLoaded", function () {
+        const seoTabsContainer = document.getElementById("how-seo");
+        const tabs = seoTabsContainer.querySelectorAll(
+          '[data-bs-toggle="tab"]'
+        );
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("shown.bs.tab", function () {
+            tabs.forEach((t) => {
+              const icon = t.querySelector("i");
+              if (t.classList.contains("active")) {
+                icon.classList.remove("bi-chevron-right");
+                icon.classList.add("bi-chevron-down");
+              } else {
+                icon.classList.remove("bi-chevron-down");
+                icon.classList.add("bi-chevron-right");
+              }
+            });
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll("#seo-process .arrow-button-gray")
+          .forEach((button) => {
+            button.addEventListener("click", function (event) {
+              event.preventDefault();
+              document
+                .querySelectorAll("#seo-process .arrow-button-gray")
+                .forEach((btn) => btn.classList.remove("active"));
+              this.classList.add("active");
+
+              const targetId = this.getAttribute("data-bs-target").substring(1);
+              document
+                .querySelectorAll("#seo-process .button-image")
+                .forEach((tab) => tab.classList.remove("show", "active"));
+              document.getElementById(targetId).classList.add("show", "active");
+
+              document
+                .querySelectorAll("#seo-process .plain-text")
+                .forEach((content) =>
+                  content.classList.remove("show", "active")
+                );
+              document
+                .getElementById(`${targetId}-content`)
+                .classList.add("show", "active");
+            });
+          });
+      });
     </script>
   </body>
 </html>
