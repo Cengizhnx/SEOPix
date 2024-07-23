@@ -20,14 +20,16 @@
     <link rel="icon" href="assets/img/seopix-favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   </head>
   <body>
     <!-- Header -->
-    <section class="position-relative" id="header">
+    <section class="position-relative main" id="header">
       <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
           <div class="header-logo">
@@ -104,24 +106,28 @@
         </div>
       </nav>
 
-      <div
-        class="position-absolute container d-flex flex-column align-items-center justify-content-center gap-4"
-        style="left: 50%; top: 50%; transform: translate(-50%, -50%)"
-      >
+      <div class="header-main container gap-4">
         <h1>
           Dönüşüm Odaklı <br />
           Digital Pazarlama Ajansı
         </h1>
-
         <p>
-          Lorem ipsum dolor sit amet consectetur. Rhoncus ut dui eu et nulla
-          pulvinar lorem velit molestie.
+          Dijital dünyadaki potansiyel müşterilerinize doğru pazarlama
+          kanallarında maksimum verim ile ulaşmak istiyorsanız
+          <strong>SEOPix</strong> yanınızda !
         </p>
-
-        <a href="/" class="arrow-button-yellow mt-4">
+        <a href="/" class="arrow-button-yellow mt-lg-4">
           Markanı Bizimle Büyüt <i class="bi bi-chevron-right"></i>
         </a>
       </div>
+      <img
+        src="assets/img/main-bg.svg"
+        class="header-bg img-fluid d-none d-lg-block"
+        width="1250"
+        height="320"
+        alt="Ana Sayfa Arkaplan"
+      />
+
       <div class="white-field p-3"></div>
     </section>
 
@@ -136,20 +142,22 @@
         <div
           class="main-brands d-flex flex-wrap align-items-center justify-content-center gap-4 mb-3 mb-lg-0 mt-4 px-1 px-lg-0"
         >
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
                 href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="Kızlar Soruyor Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -162,22 +170,23 @@
                 alt="Kızlar Soruyor"
               />
             </div>
-          </div>
+          </a>
 
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
-                href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="Turhost Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -190,22 +199,24 @@
                 alt="Turhost"
               />
             </div>
-          </div>
+          </a>
 
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
                 href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="Bubilet Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -218,22 +229,24 @@
                 alt="Bubilet"
               />
             </div>
-          </div>
+          </a>
 
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
                 href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="MediaMarkt Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -246,22 +259,23 @@
                 alt="MediaMarkt"
               />
             </div>
-          </div>
+          </a>
 
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
-                href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="Getir Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -274,22 +288,23 @@
                 alt="Getir"
               />
             </div>
-          </div>
+          </a>
 
-          <div class="col-12 col-md-5 col-lg-3 d-flex flex-column">
+          <a href="" class="col-12 col-md-5 col-lg-3 d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
               <div class="col-10">
                 <p class="ps-3 text-left">MARKA ANALİZİNİ İNCELE</p>
               </div>
-              <a
+              <div
                 class="col-2 d-flex align-items-center justify-content-center"
-                href=""
-                ><img
+              >
+                <img
                   src="assets/img/arrow.webp"
                   width="16"
                   height="16"
                   alt="Viaport Marina Link"
-              /></a>
+                />
+              </div>
             </div>
             <div
               class="brand-img d-flex align-items-center justify-content-center p-5"
@@ -302,7 +317,7 @@
                 alt="Viaport Marina"
               />
             </div>
-          </div>
+          </a>
         </div>
 
         <a href="/" class="circle-button-transparent mb-4 mt-lg-3 mb-lg-5">
@@ -312,27 +327,183 @@
     </section>
 
     <!-- Services -->
-    <section id="services">
+    <section id="services" class="py-5">
       <div
-        class="container d-flex flex-column align-items-center justify-content-center py-5"
+        class="container d-flex flex-column align-items-center justify-content-center mb-4 mb-md-5"
       >
         <p class="regular-title">MARKALARIMIZI BÜYÜTÜRKEN</p>
         <p class="bold-title mt-1">Sunduğumuz Hizmetler</p>
       </div>
-      <a href="/" class="all-services">TÜM HİZMETLERİ İNCELE!</a>
+      <a href="/" class="d-none d-lg-block all-services"
+        >TÜM HİZMETLERİ İNCELE!</a
+      >
+      <div id="card-slider" class="px-3 px-md-5">
+        <div class="col-12 swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide active p-5">
+              <p class="bold-title">
+                SEO Odaklı <br />
+                Optimizasyon
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple active mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="299"
+                height="299"
+                style="
+                  right: 0px;
+                  bottom: 0px;
+                  z-index: -1;
+                  border-bottom-right-radius: 22px;
+                "
+                src="assets/img/seo-odakli-slider.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide p-5">
+              <p class="bold-title">
+                Performans <br />
+                Pazarlama
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="299"
+                height="299"
+                style="right: -30px; bottom: 0; z-index: -1; opacity: 0.5"
+                src="assets/img/performans-pazarlama-slider.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide p-5">
+              <p class="bold-title">
+                İçerik <br />
+                Ajansı
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="254"
+                height="238"
+                style="right: 0px; bottom: 25px; z-index: -1; opacity: 0.5"
+                src="assets/img/icerik-ajansi-slider.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide p-5">
+              <p class="bold-title">
+                Sosyal Medya <br />
+                Yönetimi
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="281"
+                height="253"
+                style="right: 10px; bottom: 25px; z-index: -1; opacity: 0.5"
+                src="assets/img/sosyal-medya-slider.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide p-5">
+              <p class="bold-title">
+                Google ADS <br />
+                Marketing
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="281"
+                height="253"
+                style="right: 5px; bottom: 25px; z-index: -1; opacity: 0.5"
+                src="assets/img/google-ads-slider.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide p-5">
+              <p class="bold-title">
+                Web Site <br />
+                Tasarım
+              </p>
+              <p class="plain-text text-start mx-0 mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis
+              </p>
+              <div class="d-flex">
+                <a href="#" class="arrow-button-purple mt-5 mb-lg-5">
+                  Detaylı İncele <i class="bi bi-chevron-right"></i>
+                </a>
+              </div>
+              <img
+                class="position-absolute img-fluid"
+                width="281"
+                height="253"
+                style="right: 5px; bottom: 25px; z-index: -1; opacity: 0.5"
+                src="assets/img/web-site-slider.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Example Brands -->
-    <section class="mt-5 mb-3 mb-lg-5">
+    <section class="pt-5" id="exampleBrands">
       <div
-        class="container d-flex flex-column align-items-center justify-content-center"
+        class="container d-flex flex-column align-items-center justify-content-center mb-4 mb-md-5"
       >
         <p class="regular-title">VAKA ANALİZLERİMİZ</p>
         <p class="bold-title mt-1">SEO ile Başarıya Ulaşın!</p>
       </div>
-    </section>
-
-    <section id="exampleBrands">
       <div class="col-12 d-flex flex-column flex-lg-row gap-4 gap-lg-0">
         <div
           class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start gap-3 pt-lg-5"
@@ -361,23 +532,23 @@
           >
             <p class="heading">Sonuçlar</p>
             <div
-              class="col-12 d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-center justify-content-lg-start gap-3 ps-lg-3"
+              class="col-12 d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-center justify-content-lg-start gap-3"
             >
               <div class="col-5 col-lg-3 px-1">
                 <span class="bold-title">%105</span>
-                <p class="plain-text text-start pe-2 mx-0">
+                <p class="plain-text text-start pe-2">
                   Google kaynaklı organik oturumda %105 büyüme
                 </p>
               </div>
               <div class="col-5 col-lg-3 px-1 brands-second-div">
                 <span class="bold-title">%30</span>
-                <p class="plain-text text-start pe-2 mx-0">
+                <p class="plain-text text-start pe-2">
                   2016’nın ikinci yarısında 2015‘e göre %30 büyüme
                 </p>
               </div>
               <div class="col-5 col-lg-3 px-1">
                 <span class="bold-title">%55</span>
-                <p class="plain-text text-start pe-2 mx-0">
+                <p class="plain-text text-start pe-2">
                   2017’nin ikinci yarısında 2016’ya göre %55 büyüme
                 </p>
               </div>
@@ -438,7 +609,7 @@
         <div
           class="d-flex flex-column flex-lg-row align-items-start justify-content-center mt-5 gap-2 gap-lg-0"
         >
-          <div class="col-lg-4 d-flex flex-column align-items-start px-3">
+          <div class="col-lg-4 d-flex flex-column align-items-start px-lg-3">
             <p class="heading m-0">
               Sitemap (Site Haritası) Nedir? Nasıl Oluşturulur?
             </p>
@@ -450,7 +621,7 @@
               Devamını Oku <i class="bi bi-chevron-right"></i>
             </a>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-start px-3">
+          <div class="col-lg-4 d-flex flex-column align-items-start px-lg-3">
             <p class="heading m-0">Featured Snippet Nedir ? Nasıl Yapılır ?</p>
             <p class="plain-text text-start m-0 mt-2 mt-lg-3">
               Öne çıkan snippet olarak da bilinen featured snippet, Google arama
@@ -460,7 +631,7 @@
               Devamını Oku <i class="bi bi-chevron-right"></i>
             </a>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-start px-3">
+          <div class="col-lg-4 d-flex flex-column align-items-start px-lg-3">
             <p class="heading m-0">
               Rankbrain Nedir? Google Rankbrain Algoritması
             </p>
@@ -478,24 +649,26 @@
 
     <!-- Offer -->
     <section class="container" id="offer">
-      <div
+      <form
+        action=""
         class="col-12 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-4 gap-lg-0 px-3 px-md-5 py-4"
       >
         <div
-          class="col-12 col-lg-5 d-flex flex-column align-items-center align-items-lg-start"
+          class="form-info col-12 col-lg-5 d-flex flex-column align-items-center align-items-lg-start"
         >
           <p class="bold-title text-lg-start mb-3 mb-lg-4">
-            Markanı Bizimle Büyüt ve Duyur!
+            Markanı Bizimle <br />
+            Büyüt ve Duyur!
           </p>
           <p class="plain-text text-lg-start m-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt
           </p>
-          <a href="/" class="arrow-button-purple mt-4 mt-lg-5">
+          <button type="submit" class="arrow-button-purple mt-4 mt-lg-5">
             Hemen Teklif Al <i class="bi bi-chevron-right"></i>
-          </a>
+          </button>
         </div>
-        <form class="col-12 col-lg-7 d-flex flex-column gap-2" action="">
+        <div class="form col-12 col-lg-7 d-flex flex-column gap-2">
           <input
             placeholder="İsim Soyisim"
             type="text"
@@ -527,8 +700,8 @@
             name=""
             id=""
           ></textarea>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
 
     <!-- Footer -->
@@ -705,29 +878,30 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/lazysizes.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          nav: true,
-          margin: 10,
-          navText: [
-            "<div class='nav-btn prev-slide'></div>",
-            "<div class='nav-btn next-slide'></div>",
-          ],
-          responsiveClass: true,
-          responsive: {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          centeredSlides: true,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
             0: {
-              items: 1,
+              slidesPerView: 1,
+              spaceBetween: 40,
             },
-            500: {
-              items: 2,
+            992: {
+              slidesPerView: 2,
+              spaceBetween: 40,
             },
-            640: {
-              items: 3,
-            },
-            1200: {
-              items: 4,
+            1600: {
+              slidesPerView: 3,
+              spaceBetween: 40,
             },
           },
         });
