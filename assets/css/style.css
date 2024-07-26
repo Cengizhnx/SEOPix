@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --poppins-font: "Poppins", sans-serif;
+  --ibm-font: "IBM Plex Sans", sans-serif;
   --color-purple: #3e037a;
   --color-light-purple: #7e58ff;
   --color-bg-purple: #eedefe;
@@ -14,6 +16,9 @@
 }
 @font-face {
   font-family: "Poppins", sans-serif;
+}
+@font-face {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 body {
   font-family: var(--poppins-font);
@@ -57,6 +62,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+#header.row-finder .header-main {
+  top: 47%;
+}
 #header > div > h1 {
   color: #ffffff;
   font-weight: 700;
@@ -74,10 +82,14 @@ body {
   text-align: center;
   margin: 0;
 }
+#header > div > p.header-author strong {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
 #header.row-finder {
   background: linear-gradient(180deg, #742dd2 0%, #3c176c 100%);
 }
 #header.corporate-seo {
+  height: 580px;
   background: linear-gradient(180deg, #7301e9 22%, #7469ff 100%);
 }
 .navbar {
@@ -196,7 +208,7 @@ body {
 
 .arrow-button-purple {
   border: none;
-  padding: 8px 8px 8px 34px;
+  padding: 6.5px 8px 6.5px 30px;
   background: var(--color-light-purple);
   display: flex;
   align-items: center;
@@ -518,7 +530,6 @@ body {
   padding: 20px 30px;
   box-shadow: -4px 5px 26.5px 0px rgba(0, 0, 0, 0.15);
 }
-
 .form-select,
 .form-control {
   background-color: var(--color-secondary);
@@ -536,6 +547,27 @@ body {
 }
 textarea.form-control {
   resize: none;
+}
+#blog img {
+  border-radius: 16px;
+  object-fit: cover;
+}
+.author {
+  padding: 0 50px;
+}
+.author a {
+  text-decoration: none;
+}
+.author .blog {
+  font-size: 16px;
+  font-weight: 600;
+}
+.author .text {
+  font-size: 15px;
+  font-weight: 400;
+}
+.author i {
+  color: var(--color-light-purple);
 }
 
 /* Footer */
@@ -648,7 +680,7 @@ footer > div > hr {
 }
 
 #seo-tools > div > div {
-  row-gap: 30px;
+  row-gap: 35px;
 }
 /* .fade:not(.show) {
   display: none !important;
@@ -741,8 +773,8 @@ footer > div > hr {
   padding-bottom: 12.5px;
 }
 #faq.marketing.purple-field {
-  padding-bottom: 200px;
-  margin-bottom: -217px;
+  padding-bottom: 250px;
+  margin-bottom: -285px;
   border-radius: 0;
   background-color: var(--color-light-purple);
 }
@@ -890,8 +922,8 @@ table.table > tbody > tr:hover th {
 }
 .contents hr {
   border: 0.5px solid #000;
-  width: 53%;
-  margin: 25px 0;
+  width: 70%;
+  margin: 30px 0;
 }
 .contents a {
   max-width: 325px;
@@ -900,7 +932,7 @@ table.table > tbody > tr:hover th {
   gap: 16px;
   background-color: var(--color-yellow);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   text-decoration: none;
   color: #000;
@@ -918,15 +950,16 @@ table.table > tbody > tr:hover th {
   border: 5px solid var(--color-border-purple);
   border-radius: 30px;
   max-width: 490px;
-  height: 325px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 }
 .corporate-seo-box .title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
+  line-height: 30px;
   margin: 0;
 }
 .modal-header {
@@ -968,11 +1001,9 @@ table.table > tbody > tr:hover th {
   background: var(--color-purple);
 }
 #teklifModal .form-select,
-.form-control {
+#teklifModal .form-control {
   background-color: #f6f6f6;
 }
-
-/* About */
 
 .about-box::before {
   content: "";
@@ -982,7 +1013,8 @@ table.table > tbody > tr:hover th {
   right: 0;
   bottom: 0;
   background-color: #ffffff;
-  opacity: 0.1;
+  border-radius: 30px;
+  opacity: 0.2;
   background-image: radial-gradient(
       #7e58ff 0.8500000000000001px,
       transparent 0.8500000000000001px
@@ -992,14 +1024,11 @@ table.table > tbody > tr:hover th {
   background-position: 0 0, 20px 20px;
   z-index: -1;
 }
-
 .about-box {
-  border-radius: 25px;
   position: relative;
   padding: 30px;
   text-align: center;
 }
-
 .counter {
   color: #7e58ff;
   font-size: 48px;
@@ -1011,7 +1040,6 @@ table.table > tbody > tr:hover th {
   font-size: 15.5px;
   color: var(--color-footer-text);
 }
-
 #our-team > div > div > p {
   text-align: center !important;
 }
@@ -1057,10 +1085,8 @@ table.table > tbody > tr:hover th {
 .team-profile .profile-info .social-info a {
   font-size: 14.5px;
   color: var(--color-light-purple);
-  padding: 0 5px;
-}
-.team-profile .profile-info .social-info a {
-  padding-right: 0;
+  padding: 0 0 0 5px;
+  text-decoration: none;
 }
 .team-profile .details {
   position: relative;
@@ -1108,10 +1134,20 @@ table.table > tbody > tr:hover th {
 .team-profile:hover .details::after {
   background-color: #ffffff;
 }
-
+#seo-contents {
+  font-family: var(--ibm-font);
+}
+#seo-contents .plain-text {
+  font-size: 16px;
+}
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   #card-slider .swiper-wrapper {
     margin-left: -230px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .author {
+    padding: 0px 25px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -1122,6 +1158,7 @@ table.table > tbody > tr:hover th {
   #card-slider .swiper-wrapper {
     margin-left: -100px;
   }
+  #seo-contents .responsiveImg,
   .team-profile .profile-info .responsiveImg {
     width: 100%;
     height: auto;
@@ -1140,10 +1177,17 @@ table.table > tbody > tr:hover th {
     max-width: 130%;
     height: auto;
   }
+  #blog img {
+    width: 100%;
+    height: auto;
+  }
+  .author {
+    padding: 0px 10px;
+  }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .corporate-seo-box {
-    height: 375px;
+    height: 500px;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 565px) {
@@ -1162,6 +1206,12 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 992px) {
+  #seo-tools > div > div {
+    row-gap: 25px;
+  }
+  #offer iframe {
+    width: 240px !important;
+  }
   ul.dropdown-menu.show {
     color: #fff !important;
     border: none;
@@ -1242,12 +1292,9 @@ table.table > tbody > tr:hover th {
   .counter-text {
     font-size: 15px;
   }
-  .corporate-seo-box {
-    gap: 16px;
-    height: 300px;
-  }
 }
 @media screen and (max-width: 768px) {
+  #header.corporate-seo,
   #header {
     height: 500px;
   }
@@ -1300,13 +1347,13 @@ table.table > tbody > tr:hover th {
     width: 100%;
   }
 }
-@media only screen and (max-width: 576px) {
-  .team-profile .profile-info::after {
-    height: 123px;
-    bottom: -90px;
-  }
-}
 @media screen and (max-width: 465px) {
+  #seo-contents .plain-text {
+    font-size: 15.5px;
+  }
+  #header.row-finder .header-main {
+    top: 42%;
+  }
   #header > div > h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1384,6 +1431,11 @@ table.table > tbody > tr:hover th {
   #card-slider .swiper-slide {
     padding: 34px !important;
   }
+  #card-slider .swiper-slide:nth-child(2) img,
+  #card-slider .swiper-slide:nth-child(4) img,
+  #card-slider .swiper-slide:nth-child(5) img {
+    opacity: 0.4;
+  }
   #card-slider .swiper-slide .bold-title {
     font-size: 25px;
     line-height: 33px;
@@ -1419,11 +1471,8 @@ table.table > tbody > tr:hover th {
   .main-brands .brand-img img {
     max-width: 110%;
   }
-  .corporate-seo-box {
-    height: 310px;
-  }
   .corporate-seo .seo-breadcrumb {
-    width: 100%;
+    width: 80%;
     left: -5%;
   }
   .seo-breadcrumb {
@@ -1488,14 +1537,14 @@ table.table > tbody > tr:hover th {
   }
   #faq.marketing.purple-field .title,
   .corporate-seo-box .title {
-    font-size: 18px;
+    font-size: 22px;
   }
   .corporate-seo-box img {
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
   }
   #faq.marketing.purple-field .plain-text {
-    font-size: 18px;
+    font-size: 17px;
   }
   .modal-body .title {
     font-size: 15px;
@@ -1514,5 +1563,9 @@ table.table > tbody > tr:hover th {
   }
   .counter-text {
     font-size: 14.5px;
+  }
+  #seo-tools img {
+    width: 66%;
+    height: auto;
   }
 }
