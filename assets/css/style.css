@@ -1290,7 +1290,7 @@ table.table > tbody > tr:hover th {
 #web-design-content {
   position: relative;
   padding: 0;
-  margin-top: -55px;
+  margin-top: -80px;
 }
 #web-design-content .web-wrap {
   padding: 0 25px;
@@ -1549,6 +1549,9 @@ table.table > tbody > tr:hover th {
   }
   .heading {
     font-size: 18.5px;
+  }
+  #web-design-content {
+    margin-top: -55px;
   }
 }
 @media screen and (max-width: 640px) {
