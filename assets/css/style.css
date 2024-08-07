@@ -97,12 +97,29 @@ body {
 #header.row-finder .header-main {
   top: 47%;
 }
+
 #header > div > h1 {
   color: #ffffff;
   font-family: var(--poppins-bold-700);
   font-size: 46px;
   line-height: 64px;
   text-align: center;
+  margin: 0;
+}
+#header > div > div > h1 {
+  color: #ffffff;
+  font-family: var(--poppins-bold-700);
+  font-size: 40px;
+  line-height: 64px;
+  text-align: center;
+  margin: 0;
+}
+#header > div > div > p {
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 31.5px;
+  text-align: start;
   margin: 0;
 }
 #header > div > p {
@@ -180,6 +197,7 @@ body {
   background-color: var(--color-light-purple);
 }
 .white-field {
+  padding: 20px 0;
   background-color: #ffffff;
   width: 50%;
   border-radius: 30px 30px 0 0;
@@ -189,6 +207,7 @@ body {
   transform: translate(-50%, 0%);
 }
 .gray-field {
+  padding: 20px 0;
   background-color: var(--color-secondary);
   width: 50%;
   border-radius: 30px 30px 0 0;
@@ -983,17 +1002,27 @@ table.table > tbody > tr:hover th {
   margin-top: 10px;
 }
 
+#seo-contents {
+  font-family: var(--ibm-font);
+}
+#seo-contents .plain-text {
+  font-size: 16px;
+}
+#seo-contents .seo-heading {
+  font-family: var(--poppins-semibold-600);
+  font-size: 18px;
+}
 .contents .title {
   font-size: 24px;
   font-family: var(--poppins-bold-700);
   margin-bottom: 0;
 }
 .contents hr {
-  border: 0.5px solid #000;
+  border: 0.5px solid #b1b1b1;
   width: 70%;
   margin: 30px 0;
 }
-.contents a {
+.contents .tag {
   max-width: 325px;
   display: flex;
   align-items: start;
@@ -1007,12 +1036,43 @@ table.table > tbody > tr:hover th {
   border-radius: 14px;
   padding: 20px 41px 20px 20px;
 }
-.contents a:hover {
+.contents .tag:hover {
   background-color: #cffdb4;
 }
-.contents a p {
+.contents .tag p {
   margin: 0;
 }
+.contents .contact svg {
+  color: var(--color-light-purple);
+}
+.contents .contact .location,
+.contents .contact a {
+  font-size: 14.5px;
+  text-decoration: none;
+  color: #2e2e2e;
+  margin: 0;
+  font-family: var(--poppins-medium-500);
+}
+.contents .contact a:hover {
+  text-decoration: underline;
+}
+.contents .contact-desc {
+  font-family: var(--poppins-regular-400);
+}
+.contents .contact-hr {
+  border: 0.5px solid #b1b1b1;
+  width: 100%;
+  margin: 40px 0;
+}
+.contents .contact.arrow-button-purple {
+  padding: 5px 8px 5px 24px;
+  gap: 16px;
+  font-size: 15px;
+}
+.contents .contact.arrow-button-purple i {
+  padding: 4px 6px;
+}
+
 .corporate-seo-box {
   background-color: var(--color-bg-purple);
   border: 5px solid var(--color-border-purple);
@@ -1054,6 +1114,9 @@ table.table > tbody > tr:hover th {
   font-size: 17px;
   margin-bottom: 0;
   text-align: center;
+}
+#teklifModal {
+  z-index: 9999999;
 }
 #teklifModal .arrow-button-purple {
   padding: 6px 8px 6px 30px;
@@ -1205,12 +1268,6 @@ table.table > tbody > tr:hover th {
 }
 .team-profile:hover .details::after {
   background-color: #ffffff;
-}
-#seo-contents {
-  font-family: var(--ibm-font);
-}
-#seo-contents .plain-text {
-  font-size: 16px;
 }
 
 /* Web Projects */
@@ -1373,9 +1430,12 @@ table.table > tbody > tr:hover th {
     width: 125%;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1300px) {
   #card-slider.web .swiper-wrapper {
-    margin-left: 0px;
+    margin-left: -200px;
+  }
+  #card-slider.web .swiper-slide {
+    height: auto;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1517,6 +1577,9 @@ table.table > tbody > tr:hover th {
   #header {
     height: 500px;
   }
+  #header > div > div > h1 {
+    font-size: 34px;
+  }
   #header > div > h1 {
     font-size: 37.5px;
     line-height: 48px;
@@ -1524,6 +1587,11 @@ table.table > tbody > tr:hover th {
   #header.main > div > h1 {
     font-size: 30px;
     line-height: 40px;
+  }
+  #header > div > div > p {
+    text-align: center;
+    font-size: 17.5px;
+    line-height: 23px;
   }
   #header > div > p {
     width: 85%;
@@ -1576,6 +1644,7 @@ table.table > tbody > tr:hover th {
   #header.row-finder .header-main {
     top: 42%;
   }
+  #header > div > div > h1,
   #header > div > h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1585,6 +1654,7 @@ table.table > tbody > tr:hover th {
     font-size: 25px;
     line-height: 34px;
   }
+  #header > div > div > p,
   #header > div > p {
     font-size: 15.5px;
   }
