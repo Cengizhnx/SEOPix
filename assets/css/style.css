@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --ibm-font: "IBM Plex Sans", sans-serif;
+  --ibm-mono-font: "IBM Plex Mono", sans-serif;
   --poppins-bold-700: "Poppins Bold", sans-serif;
   --poppins-semibold-600: "Poppins SemiBold", sans-serif;
   --poppins-medium-500: "Poppins Medium", sans-serif;
@@ -1012,6 +1014,53 @@ table.table > tbody > tr:hover th {
   font-family: var(--poppins-semibold-600);
   font-size: 18px;
 }
+#seo-contents .subject {
+  display: flex;
+  align-items: center;
+  background-color: #eeedfe;
+  padding: 5px 25px;
+  min-height: 125px;
+}
+#seo-contents .subject div {
+  margin-left: 20px;
+}
+#seo-contents .subject span {
+  font-weight: 600;
+  font-size: 18px;
+}
+#seo-contents .subject p {
+  font-weight: 700;
+  font-size: 23px;
+  margin: 0;
+}
+#seo-contents .sub-list {
+  padding: 5px 0;
+}
+#seo-contents .sub-list:not(:last-child) {
+  border-bottom: 0.5px solid var(--color-footer-text);
+}
+#seo-contents .sub-list p {
+  font-family: var(--ibm-mono-font);
+  font-weight: 500;
+  font-size: 17px;
+  padding-left: 20px;
+  margin: 0;
+  color: var(--color-light-purple);
+}
+#seo-contents .purple-text {
+  background-color: #a091ff;
+  margin: 36px 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.img-purple {
+  background-color: var(--color-bg-purple);
+  border-radius: 15px;
+  padding: 17.5px;
+}
 .contents .title {
   font-size: 24px;
   font-family: var(--poppins-bold-700);
@@ -1640,6 +1689,22 @@ table.table > tbody > tr:hover th {
 @media screen and (max-width: 465px) {
   #seo-contents .plain-text {
     font-size: 15.5px;
+  }
+  #seo-contents .subject span {
+    font-size: 16.5px;
+  }
+  #seo-contents .subject p {
+    font-size: 20px;
+  }
+  #seo-contents .subject img {
+    width: 90px;
+  }
+  #seo-contents .purple-text {
+    margin: 30px 0;
+    font-size: 16.5px;
+  }
+  .img-purple {
+    padding: 10px;
   }
   #header.row-finder .header-main {
     top: 42%;
