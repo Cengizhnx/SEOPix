@@ -1122,6 +1122,46 @@ table.table > tbody > tr:hover th {
   padding: 4px 6px;
 }
 
+.content-box {
+  position: relative;
+  background-color: var(--color-secondary);
+  padding: 37.5px 42.5px;
+  border-radius: 30px;
+  margin-bottom: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-box .button-div {
+  padding: 12.5px;
+  position: absolute;
+  bottom: -50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  right: 0;
+  background-color: var(--color-secondary);
+}
+.content-box .button-div .arrow-button-purple {
+  font-size: 15.5px;
+  padding: 5px 6px 5px 24px;
+  gap: 10px;
+}
+.content-box .button-div .arrow-button-purple i {
+  padding: 3px 7px 6px 7px;
+}
+.content-box .title {
+  font-family: var(--poppins-medium-500);
+  line-height: 46px;
+  color: var(--color-light-purple);
+  margin: 0;
+  font-size: 38px;
+}
+.content-box .text {
+  font-family: var(--ibm-font);
+  width: 75%;
+  font-weight: 400;
+}
+
 .corporate-seo-box {
   background-color: var(--color-bg-purple);
   border: 5px solid var(--color-border-purple);
@@ -1446,6 +1486,11 @@ table.table > tbody > tr:hover th {
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
   #card-slider .swiper-wrapper {
     margin-left: -230px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1800px) {
+  #seo-contents > .seo.col-lg-5 {
+    width: 50%;
   }
 }
 @media screen and (max-width: 1600px) {
