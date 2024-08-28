@@ -74,7 +74,7 @@ body {
   z-index: 0;
 }
 #header nav > div > div.desktop-nav {
-  height: 102px;
+  height: 80px;
   background: linear-gradient(
     180deg,
     #6c01da 0%,
@@ -93,6 +93,16 @@ body {
   z-index: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#header .header-seo {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 100px;
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -115,6 +125,12 @@ body {
   line-height: 64px;
   text-align: center;
   margin: 0;
+}
+#header > div > div > h1.seo {
+  color: #ffffff;
+  font-family: var(--poppins-bold-700);
+  font-size: 36px;
+  line-height: 42px;
 }
 #header > div > div > p {
   width: 100%;
@@ -141,7 +157,7 @@ body {
 }
 #header.about,
 #header.corporate-seo {
-  height: 580px;
+  height: 500px;
 }
 #header.corporate-seo {
   background: linear-gradient(180deg, #7301e9 22%, #7469ff 100%);
@@ -199,7 +215,7 @@ body {
   background-color: var(--color-light-purple);
 }
 .white-field {
-  padding: 20px 0;
+  padding: 21px 0;
   background-color: #ffffff;
   width: 50%;
   border-radius: 30px 30px 0 0;
@@ -209,8 +225,18 @@ body {
   transform: translate(-50%, 0%);
 }
 .gray-field {
-  padding: 20px 0;
+  padding: 21px 0;
   background-color: var(--color-secondary);
+  width: 50%;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+}
+.purple-head-field {
+  padding: 22px 0;
+  background-color: var(--color-light-purple);
   width: 50%;
   border-radius: 30px 30px 0 0;
   position: absolute;
@@ -256,6 +282,33 @@ body {
 }
 
 /* Buttons */
+.arrow-button-orange {
+  border: none;
+  padding: 5px 6px 5px 16px;
+  background: #ff6f00;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-family: var(--poppins-semibold-600);
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+.arrow-button-orange i {
+  background: white;
+  color: #ff6f00;
+  font-size: 12px;
+  padding: 6px;
+  display: inline-block;
+  border-radius: 100%;
+}
+.arrow-button-orange:hover {
+  background: #ff6f00d5;
+}
 .arrow-button-yellow {
   border: none;
   padding: 6px 6px 6px 16px;
@@ -432,15 +485,16 @@ body {
 
 /* Texts */
 .regular-title {
+  font-family: var(--ibm-font);
   color: #000000;
-  font-size: 16.5px;
+  font-size: 17.5px;
   letter-spacing: 0.15em;
   text-align: center;
   margin: 0;
 }
 .bold-title {
   color: #000000;
-  font-size: 24.5px;
+  font-size: 30.5px;
   font-family: var(--poppins-bold-700);
   text-align: center;
   margin: 0;
@@ -615,8 +669,8 @@ body {
   margin-bottom: -175px;
 }
 #offer form .form-info .bold-title {
-  font-size: 27.5px;
-  line-height: 38px;
+  font-size: 36px;
+  line-height: 42px;
 }
 #offer form .form-info .plain-text {
   width: 75%;
@@ -641,12 +695,25 @@ body {
 .form-control::placeholder {
   color: #3b3c3c;
 }
+/*
 textarea.form-control {
   resize: none;
 }
+*/
 #blog img {
   border-radius: 16px;
   object-fit: cover;
+}
+#blog .heading {
+  width: 75%;
+  font-family: var(--ibm-font);
+  color: #000;
+  font-weight: 600;
+}
+#blog .plain-text {
+  width: 95%;
+  font-family: var(--ibm-font);
+  font-weight: 400;
 }
 .author {
   padding: 0 50px;
@@ -679,7 +746,9 @@ footer {
 }
 .footer-text {
   margin: 0;
-  width: 90%;
+  width: 95%;
+  font-family: var(--ibm-font);
+  font-weight: 400;
   color: var(--color-footer-text);
   font-size: 15.5px;
   line-height: 24px;
@@ -689,12 +758,6 @@ footer {
 .footer-text i {
   padding-right: 5px;
   color: #fff;
-}
-.footer-text span {
-  color: var(--color-footer-text);
-  font-size: 16px;
-  font-family: var(--poppins-bold-700);
-  line-height: 24px;
 }
 .contact-text {
   margin: 0;
@@ -712,13 +775,15 @@ footer > div > div > div > div > div > ul {
 }
 footer > div > div > div > ul > li,
 footer > div > div > div > div > div > ul > li {
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 footer > div > div > div > ul > li > a,
 footer > div > div > div > div > div > ul > li > a {
+  row-gap: 20px;
   color: var(--color-footer-text);
+  font-family: var(--ibm-font);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
 }
 footer > div > div > div > a:hover,
@@ -729,6 +794,7 @@ footer > div > div > div > div > div > ul > li > a:hover {
 .bottom-bar > div > a,
 .bottom-bar > div > p {
   font-size: 14px;
+  font-family: var(--poppins-regular-400);
 }
 .social-icons {
   color: #fff !important;
@@ -801,11 +867,10 @@ footer > div > hr {
 #faq ul {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 4px;
   font-size: 16px;
   line-height: 24px;
   padding: 0;
-  list-style-type: none;
 }
 #faq .accordion-item {
   background: white !important;
@@ -894,6 +959,45 @@ footer > div > hr {
 }
 .dark-bg {
   background-color: var(--color-secondary) !important;
+}
+#hint {
+  position: relative;
+  background-color: #fafafa;
+  padding-bottom: 125px;
+}
+#hint .sub-text {
+  font-family: var(--ibm-font);
+  font-size: 20px;
+  color: #000;
+  line-height: 31px;
+  text-align: center;
+  margin: 0;
+}
+#guide {
+  position: relative;
+  padding: 0px 0 70px 0;
+  background-color: var(--color-light-purple);
+}
+#guide .plain-text {
+  font-size: 22.5px;
+  font-weight: 700;
+  font-family: var(--ibm-font);
+  color: #fff;
+}
+#guide .title {
+  font-size: 24px;
+  font-family: var(--poppins-bold-700);
+  color: #fff;
+  text-align: center;
+}
+#guide a {
+  text-decoration: none;
+}
+#guide a:hover {
+  opacity: 0.8;
+}
+#guide div > div {
+  row-gap: 60px;
 }
 
 #finder-tools .sub-title {
@@ -1005,6 +1109,8 @@ table.table > tbody > tr:hover th {
 }
 
 #seo-contents {
+  position: relative;
+  padding-bottom: 150px;
   font-family: var(--ibm-font);
 }
 #seo-contents .sub-title {
@@ -1026,28 +1132,28 @@ table.table > tbody > tr:hover th {
   font-weight: 700;
   color: var(--color-light-purple);
 }
-#seo-contents .seo-questions {
+.seo-questions {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 27.5px;
   padding: 0;
   color: #000;
 }
-#seo-contents .seo-questions p {
+.seo-questions p {
   font-family: var(--ibm-font);
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
 }
-#seo-contents .seo-questions li {
+.seo-questions li {
   padding-left: 40px;
   display: flex;
   align-items: center;
   gap: 20px;
   font-family: var(--ibm-font);
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 16.5px;
+  font-weight: 500;
 }
 #seo-contents .examples {
   padding-left: 80px;
@@ -1087,10 +1193,13 @@ table.table > tbody > tr:hover th {
   font-weight: 600;
   font-size: 18px;
 }
+#seo-contents .bold-title,
 #seo-contents .subject p {
-  font-size: 23px;
-  margin: 0;
+  color: #000000;
+  font-size: 24.5px;
   font-family: var(--poppins-bold-700);
+  text-align: center;
+  margin: 0;
 }
 #seo-contents .sub-list {
   padding: 16px 0;
@@ -1121,7 +1230,22 @@ table.table > tbody > tr:hover th {
 .img-purple {
   background-color: var(--color-bg-purple);
   border-radius: 15px;
-  padding: 17.5px;
+  padding: 20px;
+}
+.img-purple img {
+  border-radius: 11px;
+}
+.img-purple p {
+  font-family: var(--ibm-font) !important;
+  font-size: 14px !important;
+  font-weight: 500;
+}
+.img-purple p a {
+  color: #3c73ff;
+  text-decoration: none;
+}
+.img-purple p a:hover {
+  text-decoration: underline;
 }
 .contents .title {
   font-size: 24px;
@@ -1131,7 +1255,7 @@ table.table > tbody > tr:hover th {
 .contents hr {
   border: 0.5px solid #b1b1b1;
   width: 70%;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 .contents .tag {
   max-width: 325px;
@@ -1189,6 +1313,7 @@ table.table > tbody > tr:hover th {
   background-color: var(--color-secondary);
   padding: 37.5px 42.5px;
   border-radius: 30px;
+  border-bottom-right-radius: 0;
   margin-bottom: 80px !important;
   display: flex;
   align-items: center;
@@ -1550,9 +1675,9 @@ table.table > tbody > tr:hover th {
     margin-left: -230px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1800px) {
-  #seo-contents > .seo.col-lg-5 {
-    width: 50%;
+@media screen and (min-width: 1600px) {
+  .contents .tag {
+    max-width: 275px;
   }
 }
 @media screen and (max-width: 1600px) {
@@ -1595,6 +1720,9 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 1200px) {
+  #header .header-seo {
+    padding: 0;
+  }
   .main-brands .brand-img img {
     max-width: 130%;
     height: auto;
@@ -1632,6 +1760,18 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 992px) {
+  #guide {
+    padding: 0px 0 40px 0;
+  }
+  #guide div > div {
+    row-gap: 32.5px;
+  }
+  #guide .plain-text {
+    font-size: 20px;
+  }
+  #guide .title {
+    font-size: 22px;
+  }
   #seo-tools > div > div {
     row-gap: 25px;
   }
@@ -1740,6 +1880,7 @@ table.table > tbody > tr:hover th {
     font-size: 37.5px;
     line-height: 48px;
   }
+  #header > div > div > h1.seo,
   #header.main > div > h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1754,6 +1895,7 @@ table.table > tbody > tr:hover th {
     font-size: 17.5px;
     line-height: 23px;
   }
+  .purple-head-field,
   .gray-field,
   .white-field {
     width: 70%;
@@ -1794,15 +1936,29 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 465px) {
+  .content-box .title {
+    line-height: 42px;
+    font-size: 34px;
+  }
+  #hint .sub-text {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  #guide .plain-text {
+    font-size: 18px;
+  }
+  #guide .title {
+    font-size: 20px;
+  }
   #seo-contents .start-text {
     font-size: 17px;
     line-height: 25px;
-}
+  }
   #seo-contents .sub-list p,
-  #seo-contents .seo-questions p {
+  .seo-questions p {
     font-size: 17px;
   }
-  #seo-contents .seo-questions li {
+  .seo-questions li {
     padding-left: 10px;
     font-size: 15.5px;
   }
@@ -1816,8 +1972,10 @@ table.table > tbody > tr:hover th {
   #seo-contents .subject span {
     font-size: 16.5px;
   }
+  #seo-contents .bold-title,
   #seo-contents .subject p {
-    font-size: 20px;
+    font-size: 19.5px;
+    line-height: 26px;
   }
   #seo-contents .subject img {
     width: 90px;
@@ -1831,6 +1989,10 @@ table.table > tbody > tr:hover th {
   }
   #header.row-finder .header-main {
     top: 42%;
+  }
+  #header > div > div > h1.seo {
+    font-size: 26px;
+    line-height: 34px;
   }
   #header > div > div > h1,
   #header > div > h1 {
@@ -1943,7 +2105,7 @@ table.table > tbody > tr:hover th {
     right: var(--swiper-navigation-sides-offset, 6px);
   }
   #offer form .form-info .bold-title {
-    font-size: 24.5px;
+    font-size: 27.5px;
     line-height: 34px;
   }
   #offer form .form-info .plain-text {
