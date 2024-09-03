@@ -53,6 +53,7 @@
 @font-face {
   font-family: "IBM Plex Sans", sans-serif;
 }
+
 body {
   font-family: var(--poppins-regular-400);
   margin: 0;
@@ -63,7 +64,6 @@ body {
 /* Header */
 #header {
   padding: 0;
-  height: 686px;
   background: linear-gradient(180deg, #7d00ff 0%, #0f041a 100%);
 }
 .header-bg {
@@ -148,22 +148,19 @@ body {
   text-align: center;
   margin: 0;
 }
-#header > div > p.header-author strong {
+#header > div .header-author {
+  text-decoration: none;
+  color: #fff;
+}
+#header > div .header-author strong {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 #header.row-finder {
   height: 600px;
   background: linear-gradient(180deg, #742dd2 0%, #3c176c 100%);
 }
-#header.about,
-#header.corporate-seo {
+#header.about {
   height: 500px;
-}
-#header.corporate-seo {
-  background: linear-gradient(180deg, #7301e9 22%, #7469ff 100%);
-}
-#header.web-design {
-  background: linear-gradient(180deg, #8000ff 7.5%, #a091ff 100%);
 }
 #header.web-design .arrow-button-yellow {
   padding: 5px 5px 5px 27.5px;
@@ -681,25 +678,34 @@ body {
   padding: 20px 30px;
   box-shadow: -4px 5px 26.5px 0px rgba(0, 0, 0, 0.15);
 }
+.form-select {
+  background-size: 22px;
+  background-image: url("https://www.seopix.net/front/assets/images/select-icon.svg");
+}
 .form-select,
 .form-control {
+  font-family: var(--ibm-font);
   background-color: var(--color-secondary);
   border: none;
   padding: 16px 24px;
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 24px;
   text-align: left;
-  color: #000;
+  color: #212529;
 }
 .form-control::placeholder {
   color: #3b3c3c;
 }
-/*
-textarea.form-control {
-  resize: none;
+::-webkit-resizer {
+  display: none;
 }
-*/
+textarea {
+  background: url(https://www.seopix.net/front/assets/images/textarea-icon.svg)
+    no-repeat;
+  background-position: right 15px bottom 15px;
+  background-size: 14px;
+}
 #blog img {
   border-radius: 16px;
   object-fit: cover;
@@ -1196,18 +1202,19 @@ table.table > tbody > tr:hover th {
 #seo-contents .bold-title,
 #seo-contents .subject p {
   color: #000000;
-  font-size: 24.5px;
+  font-size: 22.5px;
   font-family: var(--poppins-bold-700);
   text-align: center;
   margin: 0;
 }
+#seo-contents .subject p {
+  text-align: start;
+}
 #seo-contents .sub-list {
   padding: 16px 0;
 }
-#seo-contents .sub-list:not(:last-child) {
-  border-bottom: 0.5px solid var(--color-footer-text);
-}
-#seo-contents .sub-list p {
+#seo-contents .sub-list {
+  list-style: none;
   font-family: var(--ibm-mono-font);
   font-weight: 700;
   font-size: 18px;
@@ -1215,8 +1222,11 @@ table.table > tbody > tr:hover th {
   margin: 0;
   color: var(--color-light-purple);
 }
-#seo-contents .sub-list.gray p {
+#seo-contents .sub-list.gray {
   color: #666;
+}
+#seo-contents .sub-list:not(:last-child) {
+  border-bottom: 0.5px solid var(--color-footer-text);
 }
 #seo-contents .purple-text {
   background-color: #a091ff;
@@ -1231,6 +1241,9 @@ table.table > tbody > tr:hover th {
   background-color: var(--color-bg-purple);
   border-radius: 15px;
   padding: 20px;
+}
+.img-purple.gray {
+  background-color: #fafafa;
 }
 .img-purple img {
   border-radius: 11px;
@@ -1338,10 +1351,10 @@ table.table > tbody > tr:hover th {
 }
 .content-box .title {
   font-family: var(--poppins-medium-500);
-  line-height: 46px;
+  line-height: 44px;
   color: var(--color-light-purple);
   margin: 0;
-  font-size: 38px;
+  font-size: 36px;
 }
 .content-box .text {
   font-family: var(--ibm-font);
@@ -1675,6 +1688,11 @@ table.table > tbody > tr:hover th {
     margin-left: -230px;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  #seo-contents > .seo.col-lg-5 {
+    width: 47.5%;
+  }
+}
 @media screen and (min-width: 1600px) {
   .contents .tag {
     max-width: 275px;
@@ -1790,9 +1808,13 @@ table.table > tbody > tr:hover th {
   .dropdown-item:hover {
     background-color: transparent;
   }
-  section {
+  section,
+  article {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  section article {
+    padding: 0;
   }
   .header-logo {
     width: 80%;
@@ -1864,9 +1886,6 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 768px) {
-  #header.web-design {
-    height: 530px;
-  }
   #header.row-finder,
   #header.about,
   #header.corporate-seo,
@@ -1937,8 +1956,8 @@ table.table > tbody > tr:hover th {
 }
 @media screen and (max-width: 465px) {
   .content-box .title {
-    line-height: 42px;
-    font-size: 34px;
+    line-height: 40px;
+    font-size: 32px;
   }
   #hint .sub-text {
     font-size: 17px;
@@ -1978,7 +1997,7 @@ table.table > tbody > tr:hover th {
     line-height: 26px;
   }
   #seo-contents .subject img {
-    width: 90px;
+    width: 60px;
   }
   #seo-contents .purple-text {
     margin: 30px 0;
@@ -2011,10 +2030,6 @@ table.table > tbody > tr:hover th {
   .bg-yellow-text {
     font-size: 14px;
     padding: 6px 15px;
-  }
-  .regular-title {
-    font-size: 15px;
-    letter-spacing: 0.05em;
   }
   .bold-title {
     font-size: 20.5px;
