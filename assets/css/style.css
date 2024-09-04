@@ -1742,7 +1742,7 @@ table.table > tbody > tr:hover th {
 }
 .brand-detail {
   background-color: #eeedfe;
-  padding: 20px 80px;
+  padding: 30px 80px;
   border-radius: 15px;
 }
 
@@ -1794,9 +1794,6 @@ table.table > tbody > tr:hover th {
   #exampleBrands > div > div > .results {
     width: 125%;
   }
-  .brand-detail {
-    padding: 20px 0px;
-  }
 }
 @media screen and (min-width: 992px) and (max-width: 1300px) {
   #card-slider.web .swiper-wrapper {
@@ -1807,6 +1804,9 @@ table.table > tbody > tr:hover th {
   }
 }
 @media screen and (max-width: 1200px) {
+  .brand-detail {
+    padding: 25px;
+  }
   #header .header-seo {
     padding: 0;
   }
