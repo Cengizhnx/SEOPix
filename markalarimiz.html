@@ -44,6 +44,7 @@
       .card-left {
         display: flex;
         flex-direction: column;
+        align-items: start;
         justify-content: space-around;
         background-color: white;
         border-radius: 40px;
@@ -52,6 +53,15 @@
         margin-right: -75px;
         z-index: 1;
         max-height: 360px;
+      }
+      @media screen and (max-width: 992px) {
+        .card-left {
+          padding: 20px 35px;
+          min-height: 350px;
+        }
+        .card-right {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -145,22 +155,21 @@
 
         <p>SEOpix ile başarıya ulaşan markalarımız arasında yerinizi alın!</p>
       </div>
-      <div class="seo-breadcrumb" style="background-color: #fafafa">
-        <div
-          class="d-flex align-items-center justify-content-center mt-2 p-2 gap-3"
-        >
-          <a href="/">
-            <img
-              src="https://www.seopix.net/front/assets/images/home-icon.svg"
-              width="24"
-              height="24"
-              class="img-fluid mb-1"
-              alt="Breadcrumb"
-            />
-          </a>
-          /
-          <a href="https://www.seopix.net/markalarimiz">Markalarımız</a>
-        </div>
+      <div
+        class="seo-breadcrumb d-flex align-items-center justify-content-sm-center gap-3"
+        style="background-color: #fafafa; padding: 16px 0 6px 14px"
+      >
+        <a href="/">
+          <img
+            src="https://www.seopix.net/front/assets/images/home-icon.svg"
+            width="24"
+            height="24"
+            class="img-fluid mb-1"
+            alt="Breadcrumb"
+          />
+        </a>
+        /
+        <a href="https://www.seopix.net/markalarimiz">Markalarımız</a>
       </div>
     </header>
 
@@ -191,6 +200,23 @@
           Lorem ipsum dolor sit amet consectetur. Est sociis praesent consequat
           elementum.
         </p>
+        <a
+          href="bubilet.html"
+          class="d-flex d-lg-none arrow-button-purple"
+          role="button"
+          >Analizi İncele
+          <img
+            style="
+              background-color: #fff;
+              border-radius: 100%;
+              padding: 6px 12px;
+            "
+            width="38"
+            height="38"
+            src="assets/img/arrow-button-purple.svg"
+            alt=""
+          />
+        </a>
       </div>
       <div class="card-right">
         <img
@@ -200,26 +226,19 @@
           alt="Markalarımız"
         />
         <div class="button-container">
-          <a
-            href="bubilet.html"
-            class="directory arrow-button-purple"
-            role="button"
+          <a href="bubilet.html" class="arrow-button-purple" role="button"
             >Analizi İncele
-            <i>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                ></path>
-              </svg>
-            </i>
+            <img
+              style="
+                background-color: #fff;
+                border-radius: 100%;
+                padding: 6px 12px;
+              "
+              width="38"
+              height="38"
+              src="assets/img/arrow-button-purple.svg"
+              alt=""
+            />
           </a>
         </div>
       </div>
@@ -239,6 +258,23 @@
           Lorem ipsum dolor sit amet consectetur. Est sociis praesent consequat
           elementum.
         </p>
+        <a
+          href="bubilet.html"
+          class="d-flex d-lg-none arrow-button-purple"
+          role="button"
+          >Analizi İncele
+          <img
+            style="
+              background-color: #fff;
+              border-radius: 100%;
+              padding: 6px 12px;
+            "
+            width="38"
+            height="38"
+            src="assets/img/arrow-button-purple.svg"
+            alt=""
+          />
+        </a>
       </div>
       <div class="card-right">
         <img
@@ -248,10 +284,7 @@
           alt="Markalarımız"
         />
         <div class="button-container">
-          <a
-            href="bubilet.html"
-            class="directory arrow-button-purple"
-            role="button"
+          <a href="bubilet.html" class="arrow-button-purple" role="button"
             >Analizi İncele
             <i>
               <svg
@@ -287,6 +320,23 @@
           Lorem ipsum dolor sit amet consectetur. Est sociis praesent consequat
           elementum.
         </p>
+        <a
+          href="bubilet.html"
+          class="d-flex d-lg-none arrow-button-purple"
+          role="button"
+          >Analizi İncele
+          <img
+            style="
+              background-color: #fff;
+              border-radius: 100%;
+              padding: 6px 12px;
+            "
+            width="38"
+            height="38"
+            src="assets/img/arrow-button-purple.svg"
+            alt=""
+          />
+        </a>
       </div>
       <div class="card-right">
         <img
@@ -296,10 +346,7 @@
           alt="Markalarımız"
         />
         <div class="button-container">
-          <a
-            href="bubilet.html"
-            class="directory arrow-button-purple"
-            role="button"
+          <a href="bubilet.html" class="arrow-button-purple" role="button"
             >Analizi İncele
             <i>
               <svg
@@ -519,21 +566,17 @@
               </div>
               <button type="submit" class="arrow-button-orange">
                 Hemen Teklif Al
-                <i>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                    class="bi bi-chevron-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                    ></path>
-                  </svg>
-                </i>
+                <img
+                  style="
+                    background-color: #fff;
+                    border-radius: 100%;
+                    padding: 6px 12px;
+                  "
+                  width="36"
+                  height="36"
+                  src="assets/img/arrow-button-orange.svg"
+                  alt=""
+                />
               </button>
             </div>
             <div
@@ -572,21 +615,17 @@
               </div>
               <button type="submit" class="arrow-button-orange">
                 Hemen Teklif Al
-                <i>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="currentColor"
-                    class="bi bi-chevron-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                    ></path>
-                  </svg>
-                </i>
+                <img
+                  style="
+                    background-color: #fff;
+                    border-radius: 100%;
+                    padding: 6px 12px;
+                  "
+                  width="36"
+                  height="36"
+                  src="assets/img/arrow-button-orange.svg"
+                  alt=""
+                />
               </button>
             </div>
           </div>
