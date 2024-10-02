@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      #hero-slider {
+        background-color: #fafafa;
+      }
+      .swiper {
+        padding: 50px 0px;
+      }
+      .swiper-wrapper {
+        justify-content: space-between;
+      }
+      .swiper-slide {
+        height: 400px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 22px;
+        box-shadow: -3.04px 3.8px 20.14px 0px #00000026;
+        padding: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <article class="" id="hero-slider">
+      <div class="col-lg-10 swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="bold-title">SEO</p>
+            <p class="plain-text text-start mt-4">
+              Organik trafiğinizi arttırmak için sizlere etkili stratejilerle
+              yardımcı olabilirim.
+            </p>
+            <a href="#" class="arrow-button-purple mt-4"> Hizmeti İncele </a>
+            <img
+              class="pe-2 slder-img img-fluid"
+              width="200"
+              height="200"
+              src="assets/img/seo-rehberi.svg"
+              alt="SEO Rehberi"
+            />
+          </div>
+          <div class="swiper-slide">
+            <p class="bold-title">
+              Google Ads <br />
+              Yönetimi
+            </p>
+            <p class="plain-text text-start mx-0 mt-4">
+              Ücretli trafik kaynakları ile hedef odaklı reklamlar vermene
+              yardımcı olabilirim.
+            </p>
+            <a href="#" class="arrow-button-purple mt-4"> Hizmeti İncele </a>
+            <img
+              class="ps-3 slder-img img-fluid"
+              width="175"
+              height="200"
+              src="assets/img/google-ads-rehberi.svg"
+              alt="Google Ads Yönetimi"
+            />
+          </div>
+          <div class="swiper-slide">
+            <p class="bold-title">
+              Sosyal Medya <br />
+              Reklamları
+            </p>
+            <p class="plain-text text-start mx-0 mt-4">
+              Sosyal Medya reklamları ile marka bilinirliğini ve satış
+              stratejilerini geliştirebilirim.
+            </p>
+            <a href="#" class="arrow-button-purple mt-4"> Hizmeti İncele </a>
+            <img
+              class="slder-img img-fluid"
+              width="170"
+              height="200"
+              src="assets/img/sosyal-medya-reklamlari.svg"
+              alt="Sosyal Medya Reklamları"
+            />
+          </div>
+          <div class="swiper-slide">
+            <p class="bold-title">
+              İçerik <br />
+              Pazarlama
+            </p>
+            <p class="plain-text text-start mx-0 mt-4">
+              İçerik Pazarlaması ile markanızın ihtiyacı olan içerikleri
+              üretiyoruz.
+            </p>
+            <a href="#" class="arrow-button-purple mt-4"> Hizmeti İncele </a>
+            <img
+              class="ps-3 slder-img img-fluid"
+              width="200"
+              height="200"
+              src="assets/img/icerik-pazarlama.svg"
+              alt="İçerik Pazarlama"
+            />
+          </div>
+          <div class="swiper-slide">
+            <p class="bold-title">
+              Web <br />
+              Tasarım
+            </p>
+            <p class="plain-text text-start mx-0 mt-4">
+              SEO Uyumlu web sitesi tasarımları ve çizimleri için sizlere
+              yardımcı olabilirim.
+            </p>
+            <a href="#" class="arrow-button-purple mt-4"> Hizmeti İncele </a>
+            <img
+              class="slder-img img-fluid"
+              width="210"
+              height="200"
+              style="transform: translate(-22.5%, -50%)"
+              src="assets/img/web-tasarim.svg"
+              alt="İçerik Pazarlama"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </article>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grabCursor: true,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
