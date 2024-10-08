@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
     <link rel="icon" href="assets/img/seopix-favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -23,10 +25,22 @@
         height: 475px;
         background: linear-gradient(180deg, #7301e9 22%, #7469ff 100%);
       }
+      .doc-purple {
+        border-radius: 10px;
+      }
       @media screen and (min-width: 465px) {
         .bold-title {
           font-size: 27.5px !important;
           line-height: 35px;
+        }
+      }
+      @media screen and (max-width: 465px) {
+        .step-img {
+          width: 38px;
+          height: 38px;
+        }
+        #digital-marketing-whats .step-title {
+          font-size: 20px;
         }
       }
       .desktop-nav {
@@ -442,7 +456,7 @@
         <p class="bold-title mb-4" style="margin-top: -12px">
           İçerik Pazarlaması Neden Önemlidir?
         </p>
-        <p class="col-lg-8 plain-text">
+        <p class="col-lg-8 start-text">
           Hupspot'un 2021 yılında yayımladığı marketing raporuna göre
           pazarlamacıların %82'si aktif olarak içerik pazarlaması yapıyor. Bunun
           nedenleri arasında içerik pazarlamasının harika bir müşteri edinme
@@ -457,13 +471,13 @@
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
-                alt="Döküman"
+                src="assets/img/etkilesim-meydana-getirir.svg"
+                width="32"
+                height="32"
+                alt="Etkileşim Meydana Getirir"
               />
             </div>
-            <p class="heading">Gerçek Bir Etkileşim <br />Meydana Getirir?</p>
+            <p class="heading">Gerçek Bir Etkileşim <br />Meydana Getirir!</p>
             <p class="plain-text text-start">
               Tasarlanan web sitelerinde içerikleri Google gibi arama
               motorlarının çok rahat okuyabileceği şekilde gizli içeriklerin
@@ -474,7 +488,7 @@
             <img
               class="img-fluid"
               src="assets/img/icerik-pazarlamasi-stratejileri-nasil-yapilir.svg"
-              alt="Gerçek Bir Etkileşim Meydana Getirir?"
+              alt="Gerçek Bir Etkileşim Meydana Getirir!"
               width="480"
               height="400"
             />
@@ -486,7 +500,7 @@
           <div class="col-lg-5 mt-4 mt-lg-0 order-1 order-lg-0">
             <img
               class="img-fluid"
-              src="assets/img/seo-ile-kapsamli-icerikler.svg"
+              src="assets/img/deger-ortaya-koyar.svg"
               alt="Değer Ortaya Koyar ve Sadakati Artırır!"
               width="480"
               height="400"
@@ -498,10 +512,10 @@
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
-                alt="Döküman"
+                src="assets/img/sadakati-artirir.svg"
+                width="32"
+                height="32"
+                alt="Sadakati Artırır!"
               />
             </div>
             <p class="heading">
@@ -523,10 +537,10 @@
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
-                alt="Döküman"
+                src="assets/img/musteri-erisimi-artirir.svg"
+                width="32"
+                height="32"
+                alt="Erişimi Artırır!"
               />
             </div>
             <p class="heading">
@@ -561,7 +575,7 @@
             <img
               class="img-fluid"
               src="assets/img/seo-ile-kapsamli-icerikler.svg"
-              alt="Değer Ortaya Koyar ve Sadakati Artırır!"
+              alt="Çevrim İçi Görünürlüğü Artırır!"
               width="480"
               height="400"
             />
@@ -572,10 +586,10 @@
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
-                alt="Döküman"
+                src="assets/img/gorunurlugu-artirir.svg"
+                width="32"
+                height="32"
+                alt="Görünürlüğü Artırır!"
               />
             </div>
             <p class="heading">
@@ -601,10 +615,69 @@
           İçerik Pazarlamasında Kullanılan <br />
           İçerik Türleri Nelerdir?
         </p>
-        <p class="col-lg-7 plain-text">
+        <p class="col-lg-7 start-text">
           İlgi çeken, iletişim kuran ve müşteri mıknatısı olma potansiyeline
           sahip içerik türlerini şöyle sıralayabiliriz:
         </p>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <p class="bold-title text-start">Blog Yazıları</p>
+          <p class="plain-text text-start mt-4">
+            Markaların ürünleri ve hizmetleriyle ilgili konularda bilgi sunan
+            içeriklerdir. SEO uyumlu şekilde hazırlanan bu içeriklerle site
+            trafiğinin artması hedeflenir.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">Sosyal Medya İçerikleri</p>
+          <p class="plain-text text-start mt-4">
+            Markaların hedef kitleleriyle doğrudan temasta olabileceği ve
+            yeniliklerini duyurabileceği dinamik bir içerik türüdür.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">e-Kitaplar ve Rehberler</p>
+          <p class="plain-text text-start mt-4">
+            Genelde uzun formatlı olan bu yazılı içerikler, markanın otoritesini
+            artırmak için tercih edilebilir. Derinlemesine bilgi sunan bu
+            kaynaklar müşteriler için de faydalı içeriklerdir.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">Videolu İçerikler</p>
+          <p class="plain-text text-start mt-4">
+            Akılda kalıcı ve dikkat çekici içerik türlerinin başında videolar
+            gelir. Görsel ve işitsel unsurları bir arada sunan videolu
+            içeriklerle farkındalık oluşturulabilir, insanlar satışa ikna
+            edilebilir.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">İnfografik Çizimler</p>
+          <p class="plain-text text-start mt-4">
+            Karmaşık bilgileri görselleştirerek daha kolay şekilde anlaşılmasını
+            sağlayan ve bilgiyi hap şekilde sunan içeriklerdir.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">
+            Kullanıcı Tarafından Oluşturulan İçerikler
+          </p>
+          <p class="plain-text text-start mt-4">
+            Bu içerikler marka savunucuları tarafından oluşturulur. Kullanıcılar
+            tarafından paylaşılan ürün yorumları örnek gösterilebilir.
+          </p>
+        </div>
+        <div class="item">
+          <p class="bold-title text-start">Podcast Yayınları</p>
+          <p class="plain-text text-start mt-4">
+            Bilgiyi genelde eğlenceli şekilde sunarak marka bilinirliğini
+            artırmayı hedefler.Özellikle de yazılı bir içeriği okumak yerine
+            dinleyebilme şansını ve kolaylığını kullanıcıya verir. 
+          </p>
+        </div>
       </div>
       <div class="gray-field"></div>
     </article>
@@ -612,89 +685,87 @@
     <article id="digital-marketing-whats" style="background-color: #fafafa">
       <div class="container d-flex flex-column align-items-center">
         <p class="bold-title mb-4 mb-lg-5">İçerik Pazarlaması Nasıl Çalışır?</p>
-        <div class="col-lg-8">
-          <div class="col-lg-7 d-flex flex-column gap-3">
-            <div class="d-flex align-items-center gap-3">
-              <img
-                width="48"
-                height="48"
-                src="https://www.seopix.net/front/assets/images/ilk-adim.webp"
-                alt="1.Aşama"
-              />
-              <p class="step-title">1. Aşama</p>
-            </div>
-            <p class="plain-text text-start">
-              <strong>
-                İçerik pazarlamasını etkili bir şekilde kullanabilmenin yolu,
-                biri ne satın alacağını araştırırken doğru içerik türünü ve
-                derinliğini ona sunmaktan geçer. Satış döngüsünün her aşamasında
-                etkili içerikler sunmak önemlidir.
-              </strong>
-            </p>
-            <p class="plain-text text-start">
-              Satış sürecinin ilk aşamasında farkındalığı artıracak ve
-              endişeleri ortadan kaldıracak içeriklere odaklanılmalıdır.
-              Farkındalık aşamasında "Nedir?" ve "Faydaları nelerdir?" gibi
-              sorulara yanıt veren içerikler üretilebilir. İçerik türü olarak
-              blog yazısı, kategori ve Ürün açıklamaları, e-kitap, video veya
-              bülten tercih edilebilir. Örneğin bir hastane, "Bel fıtığı nedir,
-              tedavi yöntemleri nelerdir?" başlığıyla bir blog içeriği
-              üretebilir. Bisiklet satmak isteyen bir marka dağ bisikletini
-              inceleme konusunda bir video içeriği hazırlayabilir.
-            </p>
+        <div class="col-lg-8 d-flex flex-column gap-3">
+          <div class="d-flex align-items-end gap-3 mb-2">
+            <img
+              class="step-img"
+              width="48"
+              height="48"
+              src="assets/img/icerik-pazarlama-1-asama.svg"
+              alt="1.Aşama"
+            />
+            <p class="step-title">1. Aşama</p>
           </div>
+          <p class="plain-text text-start">
+            <strong>
+              İçerik pazarlamasını etkili bir şekilde kullanabilmenin yolu, biri
+              ne satın alacağını araştırırken doğru içerik türünü ve derinliğini
+              ona sunmaktan geçer. Satış döngüsünün her aşamasında etkili
+              içerikler sunmak önemlidir.
+            </strong>
+          </p>
+          <p class="plain-text text-start">
+            Satış sürecinin ilk aşamasında farkındalığı artıracak ve endişeleri
+            ortadan kaldıracak içeriklere odaklanılmalıdır. Farkındalık
+            aşamasında <strong>"Nedir?"</strong> ve
+            <strong>"Faydaları nelerdir?"</strong> gibi sorulara yanıt veren
+            içerikler üretilebilir. İçerik türü olarak blog yazısı, kategori ve
+            Ürün açıklamaları, e-kitap, video veya bülten tercih edilebilir.
+            Örneğin bir hastane, "Bel fıtığı nedir, tedavi yöntemleri nelerdir?"
+            başlığıyla bir blog içeriği üretebilir. Bisiklet satmak isteyen bir
+            marka dağ bisikletini inceleme konusunda bir video içeriği
+            hazırlayabilir.
+          </p>
         </div>
-        <div class="col-lg-8 mt-5">
-          <div class="col-lg-7 d-flex flex-column gap-3">
-            <div class="d-flex align-items-center gap-3">
-              <img
-                width="48"
-                height="48"
-                src="https://www.seopix.net/front/assets/images/ilk-adim.webp"
-                alt="2.Aşama"
-              />
-              <p class="step-title">2. Aşama</p>
-            </div>
-            <p class="plain-text text-start">
-              <strong>
-                İkinci aşama değerlendirme aşamasıdır. Bu aşamada hedef kitleye
-                sunulacak içeriklerin biraz daha ürün veya hizmet seçimi
-                konusunda yardımcı olması gerekir.
-              </strong>
-            </p>
-            <p class="plain-text text-start">
-              İçerik türü olarak "Nasıl yapılır?" videoları ve makaleleriyle
-              kontrol listeleri sunulabilir. Örneğin telefon satan bir şirket
-              piyasaya yeni çıkan iPhone 16 modelleri arasında bir karşılaştırma
-              içeriği veya kutu açılış videosu hazırlayabilir.
-            </p>
+        <div class="col-lg-8 d-flex flex-column gap-3 mt-5">
+          <div class="d-flex align-items-end gap-3 mb-2">
+            <img
+              class="step-img"
+              width="48"
+              height="48"
+              src="assets/img/icerik-pazarlama-2-asama.svg"
+              alt="2.Aşama"
+            />
+            <p class="step-title">2. Aşama</p>
           </div>
+          <p class="plain-text text-start">
+            <strong>
+              İkinci aşama değerlendirme aşamasıdır. Bu aşamada hedef kitleye
+              sunulacak içeriklerin biraz daha ürün veya hizmet seçimi konusunda
+              yardımcı olması gerekir.
+            </strong>
+          </p>
+          <p class="plain-text text-start">
+            İçerik türü olarak <strong>"Nasıl yapılır?"</strong> videoları ve
+            makaleleriyle kontrol listeleri sunulabilir. Örneğin telefon satan
+            bir şirket piyasaya yeni çıkan iPhone 16 modelleri arasında bir
+            karşılaştırma içeriği veya kutu açılış videosu hazırlayabilir.
+          </p>
         </div>
-        <div class="col-lg-8 mt-5">
-          <div class="col-lg-7 d-flex flex-column gap-3">
-            <div class="d-flex align-items-center gap-3">
-              <img
-                width="48"
-                height="48"
-                src="https://www.seopix.net/front/assets/images/ilk-adim.webp"
-                alt="2.Aşama"
-              />
-              <p class="step-title">3. Aşama</p>
-            </div>
-            <p class="plain-text text-start">
-              <strong>
-                Son aşamadaysa artık alıcı olmaya karar vermiş bir kitleye
-                markanın neden en iyi seçenek olduğu anlatılır.
-              </strong>
-            </p>
-            <p class="plain-text text-start">
-              Burada satılan hizmetin veya ürünün fark yarattığı alanlara
-              değinmek etkilidir. İçerik türü olaraksa kullanıcılar tarafından
-              oluşturulan içerikler, yorumlar ve ürün videoları tercih
-              edilebilir. Örneğin bir diş hekimi kliniği, hastalarını sistem
-              üzerinden yorum paylaşmaya teşvik edebilir.
-            </p>
+        <div class="col-lg-8 d-flex flex-column gap-3 mt-5">
+          <div class="d-flex align-items-end gap-3 mb-2">
+            <img
+              class="step-img"
+              width="48"
+              height="48"
+              src="assets/img/icerik-pazarlama-3-asama.svg"
+              alt="3.Aşama"
+            />
+            <p class="step-title">3. Aşama</p>
           </div>
+          <p class="plain-text text-start">
+            <strong>
+              Son aşamadaysa artık alıcı olmaya karar vermiş bir kitleye
+              markanın neden en iyi seçenek olduğu anlatılır.
+            </strong>
+          </p>
+          <p class="plain-text text-start">
+            Burada satılan hizmetin veya ürünün fark yarattığı alanlara değinmek
+            etkilidir. İçerik türü olaraksa kullanıcılar tarafından oluşturulan
+            içerikler, yorumlar ve ürün videoları tercih edilebilir. Örneğin bir
+            diş hekimi kliniği, hastalarını sistem üzerinden yorum paylaşmaya
+            teşvik edebilir.
+          </p>
         </div>
       </div>
       <div class="gray-field"></div>
@@ -702,11 +773,11 @@
 
     <article id="digital-marketing-whats" style="padding-bottom: 25px">
       <div class="container d-flex flex-column align-items-center">
-        <p class="col-lg-7 bold-title my-4 mt-lg-5">
+        <p class="col-lg-7 bold-title mb-4 my-5">
           Daha Fazla Dönüşüm İçin Etkili İçerik Pazarlama Stratejisi Nasıl
           Belirlenir?
         </p>
-        <p class="col-lg-8 plain-text">
+        <p class="col-lg-8 start-text">
           Başarılı bir içerik pazarlama stratejisi trendlere göre sürekli yön
           değiştirmez. Aksine net bir hedefi ve hedef kitlesi vardır. Bu
           stratejiyi belirlemek için şu adımlar takip edilebilir: Hedefleri
@@ -722,9 +793,9 @@
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
+                src="assets/img/hedef-kitle-analizi.svg"
+                width="32"
+                height="32"
                 alt="Hedef Kitle Analizi"
               />
             </div>
@@ -736,13 +807,15 @@
               belirleyebilirsiniz.
             </p>
           </div>
-          <div class="col-lg-5 d-flex flex-column align-items-baseline gap-3">
+          <div
+            class="col-lg-5 d-flex flex-column align-items-baseline gap-3 mt-5 mt-lg-0"
+          >
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
+                src="assets/img/rakip-analizi.svg"
+                width="32"
+                height="32"
                 alt="Rakip Analizi"
               />
             </div>
@@ -762,8 +835,8 @@
               <img
                 class="lazyload"
                 data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
+                width="32"
+                height="32"
                 alt="SEO Stratejisiyle Entegrasyon"
               />
             </div>
@@ -777,13 +850,15 @@
               elde edebilir ve potansiyel müşterilerinizi artırabilirsiniz.
             </p>
           </div>
-          <div class="col-lg-5 d-flex flex-column align-items-baseline gap-3">
+          <div
+            class="col-lg-5 d-flex flex-column align-items-baseline gap-3 mt-5 mt-lg-0"
+          >
             <div class="p-2 doc-purple">
               <img
                 class="lazyload"
-                data-src="https://www.seopix.net/front/assets/images/okunabilir-icerikler.svg"
-                width="30"
-                height="30"
+                src="assets/img/icerik-takvimi-olusturma.svg"
+                width="32"
+                height="32"
                 alt="İçerik Takvimi Oluşturma"
               />
             </div>
@@ -820,12 +895,12 @@
         <p class="col-lg-7 bold-title mb-4 mt-5">
           Başarılı İçerik Pazarlaması Örnekleri
         </p>
-        <p class="col-lg-7 plain-text">
+        <p class="col-lg-7 start-text">
           Pek çok ünlü marka başarılı içerik pazarlaması stratejileriyle adından
           söz ettirir. Bunlardan birkaçını şöyle örnekleyebiliriz:
         </p>
         <div
-          class="marketing-examples col-lg-10 row align-items-center justify-content-between mt-5"
+          class="marketing-examples col-lg-10 row align-items-center justify-content-between mt-4"
         >
           <div class="col-lg-6">
             <img
@@ -920,7 +995,7 @@
             >Siz de markanızın içerik pazarlamasıyla büyümesini istiyor ve bu
             konuda profesyonel bir desteğe ihtiyaç duyuyorsanız en doğru
             stratejiyi oluşturmak için yanınızdayız.</strong
-          >
+          ><br />
           SEOPix olarak web sitenizi optimize etmekten çevrimiçi varlığınızı
           güçlendirmeye kadar pek çok alanda sunduğumuz hizmetlerimizden
           yararlanabilirsiniz.
@@ -1858,5 +1933,74 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/lazysizes.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Owl Carousel her değiştiğinde tetiklenen olay
+        $(".owl-carousel").on("changed.owl.carousel", function (event) {
+          // currentItem indeksini al
+          var currentItemIndex = event.item.index;
+
+          // Tüm item'lardan özel stilleri kaldır
+          $(".owl-item .item").css({
+            border: "none",
+            "box-shadow": "-4px 5px 26.5px 0px #00000015",
+            background: "none",
+          });
+
+          // currentItem'a stil uygula
+          $(".owl-item").eq(currentItemIndex).find(".item").css({
+            border: "5px solid #914bff",
+            "box-shadow": "-4px 5px 26.5px 0px #00000026",
+            background: "#e0def8",
+          });
+        });
+
+        // Sayfa yüklendiğinde ilk currentItem'a stil uygula
+        var initialItemIndex = $(".owl-carousel")
+          .find(".owl-item.active")
+          .first()
+          .index();
+        $(".owl-item").eq(initialItemIndex).find(".item").css({
+          border: "5px solid #914bff",
+          "box-shadow": "-4px 5px 26.5px 0px #00000026",
+          background: "#e0def8",
+        });
+      });
+    </script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause: true,
+        responsive: {
+          0: {
+            stagePadding: 10,
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          992: {
+            stagePadding: 75,
+            items: 3,
+          },
+          1400: {
+            stagePadding: 120,
+            items: 3,
+          },
+          1600: {
+            stagePadding: 175,
+            items: 4,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
